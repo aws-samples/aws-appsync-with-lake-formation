@@ -1,0 +1,1699 @@
+Index,company_id,company_name,category_code,status,owner_id
+1,c:181016,CandidateBroker,software,operating,37
+2,c:181028,ClickTripz,advertising,operating,82
+3,c:181135,Built In Chicago,web,operating,18
+4,c:18116,1-800-905-GEEK,consulting,ipo,81
+6,c:181249,Haystack Technologies,mobile,operating,93
+8,c:181498,Koge Vitamins,ecommerce,operating,40
+9,c:18192,Adtuitive,advertising,acquired,80
+10,c:18198,FairShare,consulting,closed,16
+11,c:182299,Drastic Images,other,operating,52
+12,c:182366,RATESPECIAL INTERACTIVE,advertising,operating,40
+14,c:182501,Virginia Beach Estates,other,operating,96
+15,c:18256,kinDragon,software,operating,74
+16,c:182740,piSociety,ecommerce,operating,91
+17,c:182839,LUNA,software,operating,20
+18,c:182901,Parkland Pipeline,enterprise,acquired,66
+19,c:183049,Let'sGoDoIt,ecommerce,operating,90
+20,c:183131,ZipMeet,public_relations,operating,42
+21,c:18314,South49 Solutions,software,operating,74
+26,c:183878,Smart Shopper,web,operating,10
+27,c:183935,Episode Software,software,operating,48
+28,c:183984,US Garage Door Co West Linn,other,operating,32
+29,c:18412,YouDiligence,web,operating,9
+34,c:184792,Goodrich Residential,other,operating,22
+35,c:18481,whistleBox,games_video,operating,58
+36,c:184851,High Bar Capital Partners,other,operating,87
+37,c:184952,Grey Banner,network_hosting,operating,69
+38,c:184972,AudienceWise,consulting,acquired,43
+39,c:185106,Nomi,software,operating,83
+40,c:185232,CTX Virtual Technologies,hardware,operating,39
+41,c:185353,5 O'Clock Records,software,operating,49
+42,c:185608,Future Transit Systems,mobile,operating,78
+43,c:185762,baggg.it,web,operating,100
+44,c:1858,ReimagineMemories,web,operating,87
+45,c:18582,FetchDog,web,closed,92
+47,c:186077,Ellevation,software,operating,90
+48,c:186212,Hotelzilla,software,operating,18
+49,c:186216,Moerae Matrix,biotech,operating,11
+51,c:186582,Evolving Medium,consulting,operating,79
+52,c:186766,AutoInsuranceCenter.com,other,operating,70
+53,c:186824,Uniite,ecommerce,operating,33
+54,c:187004,Wellframe,biotech,operating,53
+55,c:187155,Flavitt,web,operating,69
+56,c:187175,Remedify,hardware,operating,53
+57,c:1873,Visible Measures,advertising,operating,68
+59,c:187397,CityInteractive,web,operating,23
+60,c:187503,SurpriseRide,web,operating,37
+61,c:1878,ATG (Art Technology Group),web,acquired,37
+64,c:188087,Dipedia,software,operating,86
+66,c:188226,Avenger Mobile,mobile,operating,16
+67,c:188403,Proactive SEO Solutions,advertising,operating,89
+69,c:188566,Encodium,ecommerce,operating,99
+70,c:18870,StarWind Software,software,operating,93
+71,c:188707,Icydeals,ecommerce,operating,37
+75,c:189721,Calm,web,operating,13
+76,c:189742,Crunch Magic,games_video,operating,99
+77,c:18977,Blip'd,games_video,operating,32
+78,c:190352,Pairwise,advertising,operating,94
+82,c:190684,Lucena Research,software,operating,38
+83,c:190730,We,mobile,operating,1
+84,c:190809,Hulp,software,operating,91
+85,c:191109,Brite Revolution,games_video,operating,49
+86,c:191166,Deibel Laboratories,biotech,operating,16
+87,c:191203,KingSide,enterprise,operating,2
+88,c:191264,Cobrapps,web,operating,34
+89,c:191436,Tikl,mobile,operating,89
+90,c:191463,MineSense Technologies,software,operating,30
+91,c:191560,Close.io,software,operating,42
+92,c:191665,Bite Global,public_relations,operating,88
+93,c:191773,BrainBloom,consulting,operating,77
+94,c:191954,Namo Media,mobile,operating,11
+95,c:191997,Lever,software,operating,58
+97,c:1924,fbExchange,public_relations,acquired,80
+98,c:192417,InterFulfillment,enterprise,operating,47
+100,c:192543,Same Day Courier Services,advertising,operating,62
+104,c:1928,IPRO,web,operating,81
+106,c:193285,Pin Point Management,consulting,operating,56
+107,c:193288,West Valley Smiles,other,operating,58
+108,c:193291,Lightspeed Technologies,public_relations,operating,93
+110,c:193615,Mutuality,web,operating,98
+111,c:193623,chedda,ecommerce,operating,53
+112,c:193637,PrepWork,other,acquired,31
+113,c:193727,MadeClose LLC,ecommerce,operating,94
+114,c:193883,GroundCntrl,mobile,operating,53
+117,c:194403,Steel House Labs,enterprise,operating,27
+118,c:194408,TEKEVER,software,operating,61
+122,c:195009,Trnio,software,operating,28
+123,c:195012,Spiral Scout,software,operating,28
+124,c:195056,SignalFuse,software,operating,48
+126,c:195309,Naturally Fresh Deodorant Crystal,ecommerce,operating,49
+128,c:195389,High Fidelity,hardware,operating,8
+129,c:195529,Capitola Media,advertising,operating,14
+130,c:195696,Brick & Maker,other,operating,16
+131,c:195698,On Call Central,public_relations,operating,75
+132,c:195872,Wicker Furniture World,ecommerce,operating,98
+133,c:196033,First Look Approval,consulting,operating,8
+139,c:1965,Maugans Corp,web,operating,67
+140,c:196864,Post.Bid.Ship,ecommerce,operating,8
+141,c:197024,Stagistics,enterprise,operating,60
+142,c:19733,Binserver,other,operating,35
+143,c:19756,IT Tag Team,consulting,operating,47
+144,c:197639,Celery,ecommerce,operating,14
+145,c:19765,WikiPock,mobile,operating,4
+147,c:19856,GlobalPrint Systems,hardware,operating,36
+149,c:199155,BarefootStudent.Com,advertising,operating,34
+150,c:19935,Ubequity,web,closed,9
+152,c:199619,TARCHALA IBS,web,operating,92
+153,c:200167,Dream Dojo,web,operating,79
+154,c:200371,Boutique Air,other,operating,17
+155,c:200515,Avera Pharmaceutical,biotech,operating,85
+156,c:200772,Recette+ The Recipe Social Network,network_hosting,operating,77
+157,c:200915,DTE Energy,other,operating,79
+158,c:200939,Bioceptive,biotech,operating,25
+159,c:201,TechnologyGuide,web,acquired,1
+160,c:201305,Stealth VC,ecommerce,operating,28
+162,c:201794,Smarter Apps,software,operating,42
+163,c:20189,Veridictus Associates,consulting,operating,31
+164,c:202091,J-Back Roofing & Construction,consulting,operating,5
+167,c:204138,Thexyz,network_hosting,operating,56
+168,c:20422,PhonEssential.com,mobile,operating,73
+169,c:204903,Tenet Healthcare Corporation,biotech,operating,75
+170,c:2050,Avid Life Media,web,operating,30
+172,c:206312,Plain,web,operating,49
+173,c:206543,Channel Medsystems,biotech,operating,100
+174,c:206917,Phigital,mobile,operating,16
+175,c:206969,Greekdrop,ecommerce,operating,47
+176,c:207896,Udorm,mobile,operating,92
+177,c:20832,LookStat,ecommerce,closed,9
+178,c:208547,Ventures Contracting,other,operating,6
+179,c:20926,Pointlogic,enterprise,operating,90
+180,c:209515,FIGNATURE,software,operating,9
+181,c:20952,Talent Alliance,ecommerce,operating,49
+184,c:209986,Molecule Software,enterprise,operating,83
+185,c:210280,Everwise,software,operating,13
+186,c:210455,BadCat Design,other,operating,92
+187,c:210489,Confie Seguros,enterprise,operating,90
+188,c:210800,Make Meaning,ecommerce,operating,9
+189,c:211333,A View From My Seat,advertising,operating,13
+191,c:211387,Wilshire Jets,other,operating,34
+198,c:21242,Clarity Accounting,software,operating,40
+199,c:21283,Omegle,web,operating,84
+200,c:212841,Truly Wireless,enterprise,operating,84
+203,c:21339,Elluminate,software,operating,57
+204,c:21364,HireCube,software,operating,12
+205,c:213843,Lohika,software,operating,100
+206,c:213887,Reformation Medicine,software,operating,94
+207,c:213914,Campus Bellhops,web,operating,50
+210,c:21450,Foundation Radiology Group,biotech,operating,7
+211,c:21493,Eiger BioPharmaceuticals,biotech,operating,17
+212,c:21499,InStream Media,advertising,operating,46
+213,c:21514,NeoStem,biotech,operating,3
+214,c:21521,Selecta Biosciences,biotech,operating,20
+215,c:21528,avVenta,advertising,acquired,38
+216,c:2154,hubbuzz.com,web,closed,47
+217,c:2155,Rent.com,web,acquired,48
+218,c:215671,Tourjive,software,operating,12
+219,c:215749,Bioreclamation Holdings,biotech,operating,8
+220,c:2159,PlanJam,web,operating,37
+222,c:2163,Kazowie,web,operating,64
+223,c:216360,Dry Creek Enterprises,other,operating,6
+224,c:216611,LogicBay,software,operating,51
+225,c:216698,LinkenTech Support Services USA,software,operating,8
+226,c:216759,Revision Military,hardware,operating,27
+227,c:216792,AFORE Solutions,enterprise,operating,19
+228,c:217,stylediary,web,acquired,4
+229,c:217007,Homeland Holdco,biotech,operating,46
+230,c:217163,RTF Logic,software,operating,50
+231,c:21721,PriveCo,ecommerce,operating,46
+232,c:217379,Impact Driven,software,operating,12
+233,c:217596,ADVANCED MEDICAL ISOTOPE,biotech,operating,32
+234,c:217644,Tegotech Software,software,operating,52
+235,c:217800,ISEBOX,software,operating,11
+236,c:217891,Pharmacyclics,biotech,ipo,25
+238,c:218,ictv,web,operating,12
+239,c:218087,ISI Life Sciences,biotech,operating,49
+240,c:21817,Pelikan Technologies,biotech,operating,50
+242,c:218254,Durham VA Medical Center,biotech,operating,62
+243,c:218381,Apriso,software,acquired,30
+245,c:21863,Stoke,mobile,operating,21
+248,c:218841,REPLICEL LIFE SCIENCES,biotech,operating,61
+249,c:219153,Planetary Resources,other,operating,96
+250,c:219488,Private Practice,software,operating,74
+252,c:219568,Hasbro Inc,games_video,ipo,98
+255,c:220455,Exerscrip,biotech,operating,58
+256,c:220528,Intrapace,biotech,operating,98
+257,c:220562,Brain Synergy Institute,biotech,operating,70
+260,c:221428,Boutique Window,web,operating,92
+262,c:221689,StratusLIVE,software,operating,16
+263,c:221708,profectus health research,biotech,operating,57
+265,c:221995,WeMonitor,hardware,operating,73
+267,c:22239,Feeva Technology Inc,mobile,operating,59
+268,c:222508,Watson Voice,public_relations,operating,100
+269,c:222534,dubjoy,software,operating,95
+270,c:2229,Liivid,web,operating,2
+271,c:222907,MedSpring,advertising,operating,55
+272,c:2231,Rethos,web,operating,21
+273,c:223261,Taggs,public_relations,operating,74
+275,c:22381,VaynerMedia,consulting,operating,42
+277,c:224317,DaVinci Digital,consulting,operating,94
+279,c:224357,Houserentals.com,web,operating,14
+280,c:22462,Kidlandia,web,operating,51
+283,c:2252,UnsubCentral,web,acquired,35
+285,c:225682,AxesNetwork,games_video,operating,47
+286,c:225711,TurtleCell,ecommerce,operating,83
+287,c:22576,BrainCells,biotech,operating,81
+288,c:225798,Acceptd,software,operating,25
+291,c:22660,Zumbua,web,closed,59
+293,c:22724,Utah Stories,public_relations,operating,7
+294,c:227663,SERVICEINFINITY,other,operating,19
+295,c:227886,Web Espy,web,operating,16
+298,c:228372,ResearchMoz(US),other,operating,64
+299,c:2284,8aweek,web,closed,94
+300,c:228556,Spooky Cool Labs,games_video,acquired,57
+301,c:229270,hdl therapeutics,biotech,operating,82
+302,c:229303,Neon labs,web,operating,73
+303,c:22935,Front Stream Payments,enterprise,operating,80
+305,c:2295,aSmallWorld,web,operating,60
+306,c:230380,EveryScreenMedia,ecommerce,acquired,7
+309,c:230709,Pivot Acquisition,software,operating,21
+310,c:230788,Favery,software,operating,26
+312,c:2313,CyberRentals,web,acquired,52
+313,c:23133,First Coverage,software,operating,77
+314,c:231466,Waraire Boswell Industries,ecommerce,operating,90
+315,c:231609,MDxHealth,biotech,operating,53
+317,c:231964,Front Page PR,consulting,operating,85
+319,c:23228,Three Rivers Consulting,software,operating,45
+320,c:232286,united healthcare practice solutions,other,operating,35
+321,c:232419,Bash Foo,ecommerce,operating,18
+324,c:23276,Book4Time,software,operating,89
+329,c:23336,Performics,advertising,acquired,43
+330,c:233715,PSiO,hardware,operating,47
+331,c:234161,Alternative Assets Investment Management,other,operating,35
+332,c:23417,Playboox,software,operating,18
+333,c:234256,IPR International,other,operating,63
+335,c:234544,decimalplus,network_hosting,operating,81
+336,c:234732,MobSoc Media,mobile,operating,43
+337,c:234768,InfoBionic,biotech,operating,47
+340,c:2349,Subimage,web,operating,57
+341,c:235039,ComponentLab,software,operating,26
+342,c:23510,The JAR Group,advertising,operating,86
+344,c:235452,Avenace Incorporated,mobile,operating,63
+345,c:235467,3d Vision Systems,hardware,operating,46
+348,c:235708,The Roost Stand,hardware,operating,81
+352,c:23640,YEAONAY,web,operating,70
+353,c:236447,smARtMAKER,hardware,operating,57
+354,c:236532,DBAZA,web,operating,71
+355,c:23665,ParentsRateAll.com,web,operating,87
+361,c:23776,Funji,games_video,operating,48
+362,c:23796,Clacendix,ecommerce,acquired,37
+364,c:238308,Euphoria Body Piercing & Tattoo,other,operating,63
+365,c:2384,AskPoodle,web,operating,44
+367,c:238457,Today Tix,software,operating,52
+368,c:23848,Crosscheck Networks,web,operating,34
+369,c:2385,Scary Ideas,web,operating,79
+370,c:238577,Imimtek,software,operating,87
+372,c:239028,Jaunty.org,consulting,operating,27
+373,c:239319,RAZ Mobile,mobile,operating,83
+375,c:239879,Mangstor,network_hosting,operating,35
+376,c:24044,Stromedix,biotech,operating,15
+377,c:240481,Smart Button,software,acquired,39
+378,c:100271,Balance Financial,enterprise,operating,71
+379,c:10058,cosinity,web,operating,87
+380,c:101880,Zuse,software,operating,49
+383,c:10447,Fizmo,software,operating,60
+384,c:10467,Pogostick,software,operating,29
+385,c:105055,Blend360 Communications,public_relations,operating,35
+386,c:105203,WebDevStudios,consulting,operating,36
+387,c:105243,orderbolt,software,operating,98
+388,c:105248,Pinchit,ecommerce,operating,23
+389,c:105315,Gamerizon Studio,games_video,operating,8
+390,c:10541,GamerTrainer,other,operating,74
+391,c:105480,LiftTickets.com,ecommerce,operating,11
+392,c:10665,photothread,web,operating,71
+394,c:107719,Franchise Gator,other,operating,13
+395,c:1089,Davidville,web,operating,6
+396,c:10947,P3 New Media,other,operating,62
+399,c:11193,Hollywood Interactive Group,web,closed,69
+402,c:11242,Frontline Selling,other,operating,4
+403,c:11542,Exajoule,hardware,operating,59
+404,c:115642,Shiloh Street Real Estate,consulting,operating,8
+405,c:11583,Radio One Llama,games_video,operating,89
+406,c:11628,BuzzBuy,ecommerce,closed,30
+407,c:1163,TrialPay,advertising,operating,20
+408,c:11664,smashLAB,consulting,operating,2
+409,c:11722,Broadcast.com,games_video,acquired,43
+410,c:118591,Informed Medical Decisions,biotech,operating,33
+411,c:11886,mnlakeplace.com,ecommerce,operating,2
+413,c:119374,Theracrine,biotech,operating,40
+414,c:12106,Outcast,web,operating,94
+415,c:12198,Edoceo,consulting,operating,95
+416,c:12223,C-KDeals Technology,hardware,operating,54
+417,c:12287,Websense,software,ipo,46
+419,c:12407,Webgineers,web,operating,35
+420,c:12431,SharperAgent,software,operating,18
+421,c:124938,SimpleReach,advertising,operating,53
+422,c:12524,CarZen,web,acquired,46
+423,c:12613,acerno,web,acquired,20
+424,c:12776,Slicehost,web,acquired,22
+425,c:12855,Atlantic Records,games_video,operating,76
+426,c:12934,FICO (Fair Isaac Corporation),software,operating,73
+428,c:13166,NPD Group,consulting,operating,6
+429,c:1320,Adteractive,advertising,operating,48
+430,c:13243,MedCommons,web,operating,80
+431,c:132893,KH Media,games_video,operating,59
+432,c:13372,Hitchsters,web,operating,91
+433,c:1339,Viewpoint,web,operating,79
+441,c:13612,NOM,web,operating,74
+442,c:1362,HOVRS,web,operating,70
+444,c:137426,influencers@,consulting,operating,70
+446,c:137921,Agradis,biotech,operating,67
+447,c:138085,HepatoChem,biotech,operating,73
+448,c:138660,MD Heavy Industries,games_video,operating,61
+450,c:1392,Sneakerplay,web,acquired,1
+451,c:13923,TwentyFour6,advertising,closed,52
+454,c:13953,O'Reilly Media,advertising,operating,19
+455,c:13956,Networkciti.com,web,operating,52
+456,c:139635,Monark Golf,ecommerce,operating,12
+457,c:139640,Real Time Tomography,software,operating,72
+458,c:139718,Wirkle,mobile,acquired,52
+459,c:139799,Solv Staffing,consulting,operating,76
+461,c:139859,Actin Web Video,games_video,operating,64
+462,c:139886,YourEncore,consulting,operating,95
+463,c:139990,Think Revision,web,operating,79
+464,c:1405,Whyville,web,operating,80
+465,c:140727,Mediasimple,enterprise,operating,12
+466,c:1409,FindArticles,web,acquired,61
+467,c:140933,Qriket,games_video,operating,65
+468,c:140941,Lamp Post Group,other,operating,2
+469,c:140970,Lord Magnus,ecommerce,operating,46
+471,c:141419,Numerotron,software,operating,24
+472,c:141591,ClearServe,software,operating,69
+473,c:141699,Hoody,web,operating,86
+474,c:141751,FDIS DALLAS,software,operating,37
+475,c:141872,Mythos Labs,games_video,operating,82
+476,c:141999,Tasqe,other,closed,50
+478,c:142498,Web Design New York,software,operating,48
+479,c:14254,Gnoso,software,operating,43
+480,c:14256,Verix,software,operating,94
+481,c:14271,American Broadband Family of Companies,other,operating,71
+482,c:142752,Astound Labs,mobile,operating,98
+484,c:143195,Startup Compass,software,operating,36
+485,c:143473,Computer Helpers,network_hosting,operating,22
+486,c:143513,Spling,advertising,operating,30
+488,c:143868,Vertical Performance Partners,mobile,acquired,71
+489,c:144176,Vascular Dynamics,hardware,operating,84
+490,c:144232,rcmnd,web,operating,54
+491,c:144377,PsychicsLive.com,web,operating,40
+492,c:144434,Havahart Wireless,ecommerce,operating,25
+493,c:144540,Safety Track,ecommerce,operating,51
+494,c:144659,DameWare Development,software,acquired,45
+495,c:144818,GlobalNewsMen,mobile,operating,58
+496,c:145160,Discriminant.ly,web,operating,42
+499,c:145241,Flagstuff.com,ecommerce,operating,62
+500,c:145244,Morpheus Hypnosis,web,operating,21
+501,c:145674,Quorus,software,acquired,100
+502,c:145691,Permeon Biologics,biotech,operating,14
+503,c:14587,Lloyd Clark LLC,consulting,operating,39
+504,c:145924,MacuCLEAR,biotech,operating,36
+505,c:14595,Vuvox,web,acquired,4
+506,c:145991,Call Climate,other,operating,51
+507,c:14600,b2b2dot0,ecommerce,operating,62
+508,c:146015,Smart Imaging Technologies,software,operating,59
+510,c:146032,ImmuneXcite,biotech,operating,47
+511,c:1463,Shoutingmat.ch,web,operating,85
+512,c:146339,Sez.me,web,operating,94
+513,c:146510,Resuvi,web,operating,46
+514,c:146659,PublicRelay,advertising,operating,30
+516,c:147,PlaceBlogger,web,closed,85
+517,c:14711,SHUB,mobile,operating,98
+519,c:147241,freshbag,other,operating,97
+520,c:14758,DispatchThis,web,operating,97
+521,c:147617,Artcator,ecommerce,operating,57
+523,c:147817,MedRunner,software,operating,59
+525,c:14792,gliider,web,operating,93
+527,c:14815,Build-A-Bear Workshop,games_video,operating,49
+529,c:148388,Flavorpill,web,operating,63
+531,c:14861,Vocollect,hardware,acquired,14
+536,c:1490,Eighty Three Degrees,web,operating,66
+537,c:149025,Skim.Me,web,operating,22
+538,c:149106,Del Rey Studios,games_video,operating,69
+539,c:149281,Aero Financial,other,operating,82
+542,c:14953,Pronto Networks,mobile,operating,22
+543,c:149570,Atrium Solutions,enterprise,acquired,75
+545,c:14975,Yonkly,enterprise,operating,57
+546,c:149855,XtremeSignPost,biotech,operating,88
+549,c:150422,Lightwire,enterprise,acquired,78
+550,c:150549,Disruptive Technologies,software,operating,30
+551,c:150585,Birri,other,operating,10
+552,c:150586,Birri Group,other,operating,87
+553,c:150587,Browse on,public_relations,operating,21
+554,c:150588,Bag of goodies,other,operating,89
+555,c:150627,Honeybear Healthcare LLC,ecommerce,closed,51
+556,c:150781,Foundry Hiring,software,acquired,58
+557,c:150785,Ubi Video,games_video,operating,27
+558,c:150796,GeneWeave Biosciences,biotech,operating,47
+559,c:150809,Clinical Coding Solutions,other,acquired,70
+560,c:150861,i4 Edge,consulting,operating,30
+562,c:150894,LVL6,games_video,operating,7
+565,c:151089,Plink,web,operating,56
+566,c:151210,Prodhub,other,operating,21
+567,c:151337,Agile Partners,software,operating,42
+570,c:151591,Ping4,software,operating,43
+571,c:151596,The Bartech Group,consulting,operating,59
+572,c:151660,igcompany entertainment,games_video,operating,98
+573,c:151694,GreenPages Technology Solutions,consulting,operating,28
+574,c:151730,UniFund,software,acquired,68
+575,c:151802,Aastrom Biosciences,biotech,operating,37
+577,c:152026,Marina Biotech,biotech,operating,39
+578,c:152102,Excelfore Corporation,enterprise,operating,61
+579,c:152291,Pictometry International,other,operating,93
+580,c:152389,Swiss Commerce,software,operating,26
+581,c:152412,ALFY Network,advertising,operating,96
+582,c:152614,Hipstamatic,web,operating,48
+583,c:152757,Merchant Exchange,web,operating,16
+584,c:152804,Vulcan Flex Circuit Corporation,enterprise,operating,47
+585,c:152831,Aptis Communications,public_relations,operating,7
+586,c:152955,Enalux LLC,other,operating,89
+587,c:152966,ClutchCook,mobile,operating,20
+590,c:153048,Muzieo Media,games_video,operating,92
+592,c:153294,The Logica,web,operating,35
+594,c:153362,The Game,mobile,operating,68
+595,c:153590,Pintics,web,closed,39
+597,c:153652,b4realtv pro,other,operating,36
+598,c:153690,TapMesh,other,operating,70
+599,c:153802,SocialInSight LLC,web,operating,66
+600,c:153838,eGain Communications Corporation,software,operating,89
+601,c:153939,Friese Customs,ecommerce,operating,87
+602,c:153952,Computer Services and Solutions,software,operating,63
+603,c:154029,Lishes,games_video,operating,95
+605,c:1542,Trezr,web,operating,73
+606,c:154202,sayHello,web,operating,87
+607,c:154249,Bespoke Post,web,operating,96
+609,c:154441,SixIntel,software,closed,13
+610,c:154574,LinenHoney,games_video,operating,68
+611,c:154831,WalkMe,enterprise,operating,34
+613,c:155033,Incase,hardware,operating,78
+617,c:155708,LeukoDx,biotech,operating,9
+618,c:155819,SproutMobi,mobile,operating,68
+619,c:15584,Donkey and Goat,other,operating,8
+621,c:156075,Trustr,web,operating,80
+622,c:156155,Immusoft,biotech,operating,1
+623,c:156157,Blackaeon International,other,operating,5
+624,c:156242,The Merrick Group,ecommerce,operating,97
+626,c:15635,Great Expectations,other,operating,73
+627,c:156623,Microtrip.it,web,operating,96
+628,c:1568,Takkle,web,acquired,56
+629,c:1569,DGP Labs,web,closed,53
+631,c:157110,SRS Medical Systems,biotech,operating,44
+634,c:157264,InToTally,mobile,operating,85
+635,c:15730,xzapps,software,operating,26
+636,c:157362,PixAwe,mobile,operating,33
+637,c:157788,Vertrax Inc,software,operating,25
+638,c:157889,Sensha,web,operating,69
+639,c:158045,BioSurplus,biotech,operating,73
+640,c:158048,batterii,software,operating,54
+641,c:15838,Wellesley Media,consulting,operating,82
+642,c:158643,PrivateDocs,web,operating,86
+643,c:158688,AdMecha,mobile,operating,25
+644,c:15869,Kabongo,games_video,operating,17
+645,c:15879,Catalist Homes,other,operating,21
+646,c:15884,Telonu,web,operating,39
+648,c:159267,Analog Productions,other,operating,63
+653,c:160034,DEALPalette,mobile,operating,6
+655,c:160143,Welichem Biotech,biotech,operating,31
+656,c:16027,Tsavo Agency,web,operating,100
+657,c:160506,Stern Data Group,advertising,operating,43
+658,c:160507,BliSquare,web,operating,87
+661,c:160952,American Medical and Information Services,software,operating,51
+662,c:160996,Dark Skull Studios,games_video,operating,15
+665,c:161383,Project Arcadia,ecommerce,operating,86
+666,c:161487,Barrera Search Marketing,advertising,operating,32
+667,c:161493,Wobblesoft,mobile,operating,47
+668,c:161521,Regaalo,ecommerce,operating,7
+669,c:16162,Globaltel Media,mobile,operating,63
+670,c:161627,Qwwee,ecommerce,operating,16
+672,c:161782,Reentry Games,games_video,operating,63
+673,c:161837,Roudr Automotive Network,other,operating,49
+674,c:161877,DormInk.com,ecommerce,operating,94
+676,c:162168,The Taploid,web,operating,76
+678,c:162380,Viridis Learning,web,operating,4
+680,c:16250,Apredica,biotech,operating,19
+684,c:162853,J. Goodin,other,operating,64
+685,c:162946,DraftKings,games_video,operating,19
+686,c:162980,Giraffon,mobile,operating,100
+687,c:162997,Gemmus Pharma,biotech,operating,60
+688,c:1630,Visivo Communications,web,operating,66
+689,c:163347,Givegoods,web,operating,18
+693,c:16429,Now Software,software,acquired,56
+694,c:1643,AdMedian LLC,web,closed,8
+695,c:164537,Tap for Tap,advertising,operating,53
+696,c:16470,Aristotle,software,operating,15
+697,c:164713,Liquipel,mobile,operating,52
+699,c:164734,Capstory,web,operating,34
+701,c:164852,Roamsoft Tech,software,operating,6
+702,c:1649,REVShare,web,operating,52
+704,c:165399,Clutch.io,mobile,acquired,33
+705,c:165498,Main Street,other,operating,24
+706,c:16558,Vator.TV,games_video,operating,7
+709,c:165911,Relmada Therapeutics,biotech,operating,96
+710,c:166117,Intentional Software,software,operating,71
+711,c:166211,Chesapeake Digital Technologies,consulting,operating,32
+712,c:166284,EyeNetra,biotech,operating,70
+713,c:166285,Contrail Systems,software,operating,96
+714,c:166329,GoScale,network_hosting,operating,90
+715,c:166340,Contriby,ecommerce,operating,66
+716,c:166529,Arrow Specialist,advertising,operating,87
+719,c:166926,Verbumsoft,software,operating,81
+720,c:167057,Kingmaker,web,acquired,70
+721,c:167164,Sidebark,mobile,operating,22
+722,c:167193,Stage 2 Networks,hardware,operating,33
+723,c:167195,FiberMedia Group,software,operating,28
+724,c:167198,Cyber Development Group International,network_hosting,operating,52
+725,c:167199,XKL,software,operating,74
+726,c:167209,Zillionize,enterprise,operating,32
+727,c:167212,WhereIsMyBusiness.com,network_hosting,operating,33
+728,c:167216,Avior Product Development,consulting,operating,39
+729,c:16727,Comedy.com,web,operating,12
+730,c:167417,Ridiculous Lifestyle,other,operating,60
+733,c:16753,Stiki Digital,web,closed,88
+735,c:167622,dress.me,other,operating,15
+738,c:167788,HiMom,mobile,operating,3
+740,c:168358,FuelStage,ecommerce,operating,91
+743,c:169238,Say It With A Condom,ecommerce,operating,34
+744,c:16932,VoiceCurve,other,operating,44
+746,c:16938,BookFresh,web,acquired,35
+748,c:169419,Portico,mobile,operating,34
+750,c:169494,SalesMarker,software,operating,83
+751,c:169515,LimoNerd,software,operating,54
+752,c:169638,Cubikal,mobile,operating,52
+753,c:170065,STS inks,ecommerce,operating,49
+754,c:170075,Beezmap,other,operating,42
+757,c:170487,SlickPixel Labs,web,operating,48
+758,c:170515,WiOffer,mobile,operating,21
+760,c:170662,Aryosys,other,operating,48
+761,c:170847,Nascent Blue,consulting,operating,10
+762,c:170863,Lean Startup Videos,advertising,operating,93
+763,c:170878,Iggli Travel,web,operating,33
+764,c:170893,GoNation,web,operating,94
+765,c:171035,RolePoint,software,operating,83
+766,c:171062,DART Therapeutics,biotech,operating,41
+768,c:171316,CIG Wireless,mobile,operating,96
+770,c:17146,Flashbang Studios,mobile,operating,34
+771,c:17152,Empty Clip Studios,mobile,operating,42
+772,c:17153,Clock Studios,mobile,operating,44
+773,c:17157,DAVA Consulting,mobile,operating,89
+774,c:171571,7eCom,ecommerce,operating,22
+777,c:17176,Vectorform,mobile,operating,10
+778,c:17184,USA Today,other,operating,83
+779,c:17187,Square Enix Japan,mobile,operating,28
+780,c:17190,Plausible Labs Cooperative,mobile,operating,83
+782,c:172050,Content Raven,enterprise,operating,29
+783,c:172061,CheckMate Mobile,software,operating,96
+786,c:172223,AerifyMedia,advertising,operating,35
+788,c:172521,RoverTown,advertising,operating,86
+789,c:172534,PCN Technology,network_hosting,operating,75
+790,c:172562,Datagres Technologies,network_hosting,operating,60
+791,c:172675,Atreca,biotech,operating,73
+792,c:172679,AirPR,public_relations,operating,91
+793,c:1727,NetApp,software,ipo,31
+794,c:172772,MSI Data,software,operating,37
+796,c:172914,MyVR,software,operating,97
+797,c:1730,HaloScan,web,acquired,78
+798,c:173193,Call the Junkman,other,operating,34
+799,c:173212,TouchéComm [ too·sháy·com ],ecommerce,operating,75
+800,c:173273,Vestec,software,operating,1
+801,c:173387,BioMarker Strategies,biotech,operating,55
+802,c:1734,Equine Now,web,operating,48
+804,c:173467,Alternate Energy Company,biotech,operating,58
+805,c:173501,SeatNinja,mobile,operating,54
+806,c:173515,Perfect Audience,advertising,operating,36
+808,c:17369,Future Brand,consulting,operating,75
+809,c:17372,Symagio,web,operating,89
+810,c:173970,PublicStuff,web,operating,85
+816,c:174192,TapWise,software,operating,18
+818,c:174312,MotoSpeed Ventures,web,operating,40
+819,c:174569,Streak,web,operating,4
+820,c:174630,scroll kit,web,operating,19
+821,c:174669,Wavecraft,hardware,operating,33
+824,c:174816,m4mlmsoftware.com,software,operating,13
+825,c:174877,dezirus,web,operating,32
+826,c:174904,adhoclabs,mobile,operating,97
+827,c:174950,Cabana,mobile,acquired,31
+830,c:175046,BrightStar Partners,consulting,acquired,98
+831,c:175164,Flint and Tinder,ecommerce,operating,13
+832,c:175271,Skinected,advertising,operating,59
+833,c:17534,Motio,software,operating,53
+834,c:175368,Decoder,mobile,operating,3
+835,c:17547,Tradual Inc.,ecommerce,operating,35
+836,c:175477,Or Be Square,web,operating,26
+837,c:175574,Little Details,mobile,operating,93
+838,c:175624,ZS Pharma,biotech,operating,98
+842,c:17583,Bolt Creative,mobile,operating,40
+843,c:17585,Zerion Software,mobile,operating,75
+844,c:175908,All Star Secure Shred,advertising,operating,10
+846,c:17592,LL Group,mobile,operating,64
+847,c:17593,Bone Gravy Games,mobile,operating,97
+848,c:17597,RustyBrick,mobile,operating,53
+849,c:176045,Unikron Inc,advertising,operating,77
+851,c:17614,Lakefront Software,mobile,operating,22
+852,c:17615,Maverick Software,mobile,operating,31
+853,c:176240,Inspirage,consulting,operating,44
+855,c:176426,WebTuner,games_video,operating,33
+857,c:176581,My Parking Permits,ecommerce,operating,86
+858,c:176787,Cinarra Systems,mobile,operating,20
+863,c:177024,MyPerfectGift.com,web,operating,56
+865,c:177319,Seesaw,mobile,acquired,13
+866,c:177428,X stunts,other,operating,28
+867,c:177729,Retail Land,ecommerce,operating,48
+868,c:177731,The Kive Company,web,operating,79
+869,c:177742,Connected Sports Ventures,mobile,operating,36
+870,c:17776,Podcast Alley,web,operating,74
+871,c:177834,Uncover,enterprise,operating,71
+875,c:17847,SafeBoot,software,acquired,72
+877,c:178553,Algotochip,hardware,operating,87
+878,c:178572,AboveLive,other,operating,69
+881,c:178944,COLOTech Services,consulting,operating,48
+883,c:179000,Sodisco,web,operating,47
+884,c:179057,Schneider National,other,operating,2
+885,c:179106,PicMonkey,web,operating,41
+886,c:179142,Aaction Overhead Door Inc.,advertising,operating,5
+887,c:179183,Studiobanks,consulting,operating,53
+888,c:179447,Star Toilet Paper,advertising,operating,99
+889,c:179588,Pencourage,web,operating,15
+891,c:17998,Mobifusion,mobile,operating,27
+892,c:180036,Fidelity Internet Marketing,consulting,operating,76
+894,c:18047,Electronic Media Publishing,software,operating,82
+895,c:36505,MarginLeft,web,closed,88
+896,c:36558,The College Reporter,other,operating,15
+897,c:36589,HandyLab,biotech,acquired,22
+898,c:36594,Neos Therapeutics,biotech,operating,17
+900,c:36657,Horizon Data Center Solutions,consulting,operating,56
+901,c:36718,TuitionCoach,software,acquired,32
+902,c:36800,National Diagnostics,other,acquired,17
+903,c:36822,By/Association,other,operating,32
+904,c:36823,Rebook'd,ecommerce,operating,76
+905,c:36842,Boundless Network,advertising,operating,90
+906,c:36867,Pricebunch,advertising,closed,34
+907,c:36931,SurIDx,software,operating,75
+908,c:37195,ClearSky Systems,software,operating,50
+909,c:37217,Myriant Technologies,biotech,operating,33
+910,c:37342,Ace Marketing & Promotions,advertising,operating,28
+911,c:37374,GeoPage,web,operating,16
+913,c:3746,Vello,web,operating,88
+914,c:37508,Statusly,web,operating,36
+915,c:37523,ThinkTel Communications,public_relations,operating,38
+916,c:37525,Event IQ,web,operating,27
+917,c:37605,Nimbus Health,software,operating,23
+918,c:37613,Silver Oven Studios,other,operating,49
+919,c:37747,Neogenix Oncology,biotech,operating,76
+920,c:37873,Cardo Medical,biotech,operating,44
+921,c:37875,Nursenav,software,operating,39
+923,c:38036,Fluik Entertainment,games_video,operating,47
+924,c:38088,Fishbowl,advertising,operating,91
+925,c:3811,Meck Technology,software,operating,76
+926,c:38121,Lingt,software,acquired,59
+927,c:38122,Rapid Link,public_relations,operating,22
+928,c:38141,PeopleFlip,advertising,operating,94
+929,c:38176,Red Llama,software,operating,16
+930,c:38194,SafeKidZone,mobile,operating,40
+931,c:38212,CloudBlue Technologies,enterprise,operating,74
+932,c:38224,MediaNet,web,operating,28
+933,c:38226,Hedge Community,web,operating,42
+934,c:38255,SynerG Software,software,operating,15
+935,c:38348,Triangle Software,software,operating,60
+936,c:3845,Students Know,web,operating,19
+937,c:38457,pbsi,enterprise,operating,3
+938,c:3846,Sipcall,mobile,operating,83
+939,c:38487,Go BIG Network,web,operating,79
+940,c:38503,Accelerate Mobile Apps,mobile,operating,15
+941,c:38697,Digital Photo Recovery,software,operating,72
+943,c:38841,Influmedix,biotech,operating,14
+944,c:38844,ScriptRx,biotech,operating,68
+945,c:38876,MobileAccess Networks,mobile,acquired,80
+946,c:3888,Delphion,web,operating,29
+947,c:389,General Mills,web,operating,46
+949,c:3902,Jodange,web,closed,88
+950,c:39026,betwyx,web,operating,51
+951,c:39065,Pump Engineering,other,acquired,13
+952,c:39154,Lazy Angel,advertising,operating,65
+954,c:39302,Candeos,consulting,operating,64
+955,c:39324,Dynavax Technologies,biotech,operating,92
+956,c:39416,Insigniam,consulting,operating,46
+957,c:39450,Newport Digital Technologies,enterprise,operating,46
+959,c:395,Incando Corporation,web,operating,31
+960,c:39503,Traxian,software,operating,12
+961,c:39504,Acadium,mobile,operating,50
+962,c:39526,Drillteam | Dachis Group,advertising,operating,35
+965,c:39637,BioLeap,biotech,operating,85
+966,c:39663,Applied Genomics,biotech,acquired,10
+968,c:39760,Ferme Olivier Lepine,other,operating,93
+970,c:39919,Convasis,consulting,operating,26
+973,c:4007,Special Ops Media,advertising,acquired,15
+974,c:40164,Dynamik Interactive,software,operating,93
+975,c:40199,Keraderm,biotech,operating,27
+976,c:40218,MyScreen,advertising,closed,8
+977,c:4031,Twubble,web,operating,53
+978,c:40339,MinoMonsters,games_video,operating,15
+979,c:40398,Unidesk,software,operating,15
+980,c:40408,Actslike,advertising,operating,85
+981,c:40450,Joonto,ecommerce,operating,39
+984,c:40644,Datria Systems,enterprise,operating,89
+985,c:40731,Wolfire Games,games_video,operating,19
+987,c:40819,Skadoit,enterprise,operating,90
+988,c:40863,TapRoot Systems,mobile,operating,95
+989,c:4090,Boston Consulting Group,consulting,operating,63
+992,c:41020,Entourage Medical Technologies,biotech,operating,65
+993,c:4106,VoxPop Network Corporation,games_video,acquired,78
+994,c:4110,Centive,software,acquired,23
+996,c:41276,Giggle,other,operating,38
+997,c:413,Social Platform,web,acquired,46
+998,c:41360,AdVerve,advertising,operating,38
+999,c:41437,Tap 'n Tap,hardware,operating,99
+1000,c:41518,Moran Consulting,consulting,operating,52
+1001,c:41602,A+ Ventures,ecommerce,operating,3
+1002,c:417,webcrossing,web,operating,66
+1003,c:41829,Gridbag,web,operating,67
+1004,c:4197,Healia,web,acquired,30
+1005,c:42088,mealnextdoor,other,operating,34
+1007,c:42122,SepSensor,other,closed,66
+1008,c:42424,Etacts,web,acquired,76
+1009,c:42431,72andSunny,advertising,operating,36
+1010,c:42492,DCpages.com,web,operating,47
+1011,c:42501,Allurent,web,acquired,61
+1012,c:42523,North End Technologies,public_relations,operating,86
+1013,c:4264,Park Sidekick,software,operating,39
+1014,c:42707,knowmore,web,operating,15
+1015,c:42710,Crocodoc,software,acquired,93
+1016,c:42717,Cobidder,ecommerce,operating,12
+1017,c:42967,Publisci,other,operating,32
+1019,c:43018,Sajan,enterprise,operating,62
+1020,c:43032,SmartMoney,advertising,acquired,34
+1021,c:43036,Prism Microwave,mobile,operating,35
+1023,c:4312,Kasenna,software,acquired,31
+1024,c:43128,Adenyo,mobile,acquired,75
+1025,c:43185,Rapid IO,enterprise,operating,93
+1027,c:43231,Bit Cauldron,hardware,operating,42
+1029,c:43276,Pacific Loan Processors,other,operating,6
+1032,c:43386,MyNines,ecommerce,closed,12
+1033,c:43418,Eleven Biotherapeutics,biotech,operating,8
+1034,c:43476,Mixed Media Labs,software,operating,95
+1035,c:43482,Freerain Systems,enterprise,operating,38
+1036,c:43494,Clevver Media,games_video,operating,41
+1037,c:4351,Black Web Enterprises,web,operating,69
+1038,c:43654,Linxter,software,operating,83
+1039,c:43672,Spinscape,web,operating,8
+1040,c:43686,Solarbuzz,consulting,acquired,16
+1041,c:43688,RiskMetrics,software,acquired,39
+1042,c:43718,Targeted Growth,biotech,operating,93
+1043,c:43747,Veruta,advertising,acquired,36
+1046,c:44060,Pure Technologies,other,operating,10
+1047,c:44077,NephroGenex,biotech,operating,93
+1048,c:4414,blogads,web,operating,94
+1049,c:44156,Arch + Company Fine Arts,consulting,operating,28
+1050,c:44162,Playteau,games_video,operating,89
+1052,c:44307,ImmuneWorks,biotech,operating,21
+1053,c:44397,SiteJabber,web,operating,31
+1054,c:44439,Social Growth Technologies,advertising,operating,2
+1055,c:44537,craytiv,web,operating,91
+1057,c:44627,OliveWoo,games_video,operating,53
+1058,c:44629,betaCooking,web,operating,17
+1060,c:44694,Hivetrader,web,operating,2
+1061,c:44745,CatchMyData,enterprise,operating,85
+1062,c:44750,HeadCount,enterprise,operating,26
+1063,c:44752,SpatialQ,enterprise,operating,60
+1064,c:44757,Sell Smart Fast,advertising,operating,87
+1065,c:44985,Shaser,biotech,operating,86
+1066,c:45049,Tork Marketing,consulting,operating,59
+1069,c:45179,Kosmos Biotherapeutics,biotech,operating,30
+1072,c:45348,Abe's Market,ecommerce,operating,79
+1073,c:45374,ShopItToMe,web,operating,65
+1074,c:45401,ExTractApps,software,closed,13
+1075,c:45405,frenting,web,operating,92
+1076,c:45482,Join The Company,web,closed,78
+1077,c:45493,Local To,mobile,operating,51
+1078,c:45517,Reverse Medical,biotech,operating,48
+1079,c:45531,Robot Mode,software,operating,80
+1081,c:45593,Shermans Travel Media,web,operating,52
+1082,c:45599,Analytics Quotient,advertising,operating,5
+1083,c:45684,Foundor,software,operating,73
+1084,c:45691,Interactions Corporation,web,operating,42
+1087,c:45858,AgileZen,software,acquired,59
+1088,c:45863,Lantern Three,consulting,operating,1
+1089,c:45917,Double Verify,advertising,operating,89
+1090,c:45945,Deckerton,software,operating,83
+1091,c:45952,Backstack Development,software,operating,26
+1092,c:4612,Superblock,web,operating,97
+1093,c:46176,Trudell Medical,biotech,operating,79
+1094,c:46221,Mobi Tech,mobile,operating,30
+1095,c:46325,FunGoPlay,games_video,operating,12
+1096,c:46327,Visitar,software,operating,1
+1099,c:46625,TransPerfect,other,operating,58
+1101,c:46668,Run The Campaign,web,operating,25
+1103,c:46689,AirXpanders,biotech,operating,38
+1105,c:46793,Primorigen Biosciences,biotech,operating,10
+1106,c:46819,Amulet Pharmaceuticals,biotech,closed,3
+1107,c:46892,Schrodinger,biotech,operating,1
+1108,c:46895,Elegant Research,other,operating,78
+1110,c:46926,The Daily Globe,games_video,operating,62
+1111,c:46938,SUNSURF.,ecommerce,operating,19
+1112,c:46955,SproutGear,ecommerce,operating,3
+1113,c:46959,Vergence Entertainment,games_video,operating,38
+1117,c:47082,Emologix,web,operating,28
+1118,c:47083,iRelaxa,web,operating,93
+1119,c:47102,Applied Computational Technologies,software,operating,68
+1122,c:47165,Base2,other,acquired,16
+1123,c:47166,iNeoMarketing,software,operating,35
+1125,c:47228,Tandem Transit,public_relations,closed,86
+1126,c:47248,Immunetrics,software,operating,43
+1127,c:47329,Speedware,software,operating,32
+1128,c:474,GoFish,games_video,ipo,2
+1129,c:47496,GraduateTutor.com,web,operating,75
+1133,c:47772,Quotify Technology,enterprise,operating,52
+1134,c:47836,HomeRun,web,acquired,37
+1135,c:47959,LocalGinger,web,acquired,10
+1136,c:47989,KPI Analytics,other,operating,28
+1137,c:48015,E-Centives,web,acquired,61
+1138,c:48092,Top Hand Media,advertising,operating,71
+1139,c:48097,CouponPost,advertising,operating,58
+1140,c:4819,Nextel Communications,public_relations,acquired,78
+1141,c:48201,Kemesa,software,operating,11
+1142,c:48204,goSnipe,web,operating,49
+1143,c:48206,Brainsoup,games_video,operating,49
+1144,c:4822,Siebel Systems,software,acquired,20
+1145,c:48331,EchoDitto,public_relations,operating,17
+1147,c:4840,The Icon Factory,software,operating,66
+1148,c:48503,Resilience,public_relations,operating,88
+1149,c:48521,On-Line Monitoring,hardware,acquired,60
+1151,c:4883,kajeet,mobile,operating,70
+1152,c:49007,Bamboo Raven,games_video,operating,79
+1153,c:49230,Moraware,software,operating,35
+1154,c:49331,XTEN,mobile,operating,54
+1156,c:49368,JackRabbit Systems,software,operating,77
+1157,c:49387,ImaCor,biotech,operating,63
+1158,c:4953,HyperCalc,software,operating,48
+1159,c:49697,Buhler,other,operating,33
+1164,c:49820,BULX,ecommerce,acquired,77
+1166,c:50001,Aon Corporation,consulting,operating,28
+1168,c:50204,Chapin Revenue Cycle Management,other,acquired,79
+1169,c:5030,MyDanwei,web,operating,97
+1171,c:5040,Activision Blizzard,games_video,ipo,53
+1173,c:50561,Sid Gabriel Group,other,operating,21
+1174,c:5063,onebluebrick,public_relations,operating,58
+1175,c:50686,aDealio,ecommerce,operating,28
+1176,c:5069,FuGen Solutions,web,acquired,83
+1177,c:50772,Sirna Therapeutics,biotech,closed,82
+1178,c:50793,invyteâ¢ Advertising Group,advertising,operating,66
+1179,c:5087,Media Next,web,operating,41
+1180,c:5095,Wirama,hardware,closed,43
+1182,c:5111,Musopen,web,operating,94
+1184,c:51306,OpenFeint,games_video,acquired,48
+1186,c:51379,1000memories,web,acquired,31
+1189,c:51445,Loose Button,ecommerce,operating,78
+1192,c:51584,FMP Products,biotech,operating,88
+1193,c:51643,Pinkdingo,web,closed,49
+1194,c:51700,DelVal.biz,ecommerce,operating,64
+1195,c:51705,Noctivity,consulting,operating,37
+1196,c:5173,Panorama,web,operating,91
+1197,c:5177,TruePosition,hardware,operating,17
+1198,c:51812,7 Star Entertainment,games_video,operating,75
+1199,c:51843,Health Imaging Hub,biotech,operating,47
+1200,c:51888,Service Fox,web,operating,95
+1201,c:51897,Ze Frank Games,games_video,operating,93
+1202,c:519,PureVideo Networks,web,closed,84
+1204,c:52,NetRatings,web,acquired,88
+1205,c:5206,Modified Media,web,operating,65
+1209,c:52301,AppSumo,software,operating,64
+1213,c:52836,Doppel & Ganger,games_video,operating,39
+1215,c:52912,Left Behind Games,software,operating,13
+1217,c:5345,Packeteer,web,acquired,2
+1219,c:5353,Fonemesh,mobile,closed,32
+1220,c:53554,Citizen Agency,consulting,operating,90
+1221,c:53665,Gravity Mobile,mobile,operating,83
+1222,c:53696,ExpRevenue,software,operating,82
+1223,c:53730,RentDeals.com,other,operating,29
+1224,c:53839,Browsemob,ecommerce,operating,69
+1225,c:53864,Goodbuzz Inc,advertising,operating,85
+1226,c:53885,AdGrok,advertising,acquired,34
+1227,c:5404,575 Alive,web,operating,83
+1228,c:54147,ForwardPro,consulting,operating,62
+1229,c:5426,Closed First Software,software,operating,29
+1231,c:543,MusicGremlin,hardware,acquired,38
+1232,c:54312,elasTiv,other,operating,27
+1233,c:54327,Pure Solutions,other,operating,54
+1234,c:5435,NetworthIQ,web,acquired,86
+1235,c:54366,SwellPath,other,operating,67
+1237,c:54458,Grady Britton,advertising,operating,1
+1238,c:54465,Kima Labs,mobile,acquired,2
+1239,c:54486,synchtube,games_video,operating,36
+1240,c:54507,Swingly,web,operating,96
+1241,c:54661,Curaxis Pharmaceutical,biotech,operating,47
+1243,c:55111,IMRadio.com,games_video,operating,45
+1244,c:55206,Rabbly,public_relations,operating,82
+1245,c:55212,Xircom,network_hosting,acquired,61
+1246,c:55236,Infinidy Corp,mobile,operating,30
+1249,c:55537,VARDA,software,operating,91
+1250,c:55603,Axela,biotech,operating,24
+1251,c:55676,Ethoseo Internet Marketing,advertising,operating,43
+1253,c:55813,Feengo,web,operating,67
+1254,c:55842,Detail Renovations,other,operating,16
+1258,c:560,Burnlounge,web,operating,74
+1259,c:56025,Jana,mobile,operating,45
+1260,c:56076,Cebix,biotech,operating,34
+1261,c:56181,Commercial Data Processing,enterprise,acquired,61
+1263,c:56270,MyThum Interactive,mobile,operating,12
+1264,c:56344,Parakweet,web,operating,41
+1265,c:56510,Adopt Marketing,consulting,operating,5
+1266,c:56516,Piick,web,operating,12
+1267,c:56541,Arno Therapeutics,biotech,operating,43
+1268,c:5657,Simple Spark,web,operating,29
+1269,c:56636,Embrace Pet Insurance,other,operating,74
+1270,c:56686,Gameview Studios,games_video,acquired,73
+1271,c:56716,G2,advertising,operating,21
+1272,c:56763,SFW LLC,software,operating,95
+1273,c:56838,Zoom Media & Marketing - Canada,advertising,operating,80
+1275,c:5694,Adscape,web,acquired,33
+1276,c:5708,LiveDeal Yellowpages,web,operating,80
+1277,c:57282,Petry Media,advertising,operating,20
+1279,c:57335,Mission Bicycle Company,other,operating,16
+1280,c:57337,Method Home,web,operating,67
+1281,c:57391,MetriGear,hardware,acquired,84
+1282,c:57394,EatItalian.com,web,operating,22
+1283,c:57480,PyRIGHT,software,operating,56
+1284,c:57534,Weatherbase,web,operating,71
+1285,c:57730,Adku,software,acquired,36
+1286,c:57797,CloudSMTP,network_hosting,operating,80
+1287,c:5789,AddictingGames,web,operating,3
+1288,c:579,MusicNet,web,operating,48
+1289,c:5790,OneMoreLevel,web,operating,2
+1290,c:5791,Ovologic,software,operating,82
+1291,c:57940,Peekaboo Mobile,mobile,acquired,64
+1293,c:5805,Forward Thinking,web,operating,54
+1294,c:58052,Sdingo,mobile,operating,90
+1295,c:58072,LogicLab,consulting,operating,19
+1297,c:58186,IFinancials,software,operating,76
+1299,c:5830,FriendsTribe,mobile,closed,34
+1300,c:5832,FeedText,mobile,operating,22
+1301,c:5846,Aruspex,software,operating,76
+1304,c:58538,Core Informatics,software,operating,62
+1305,c:58654,AnovaStorm,enterprise,operating,11
+1307,c:58744,Lalawag,web,acquired,88
+1308,c:58878,Cleveland BioLabs,biotech,operating,49
+1309,c:58964,Global Pari-Mutuel Services,games_video,operating,11
+1311,c:59278,play140,games_video,acquired,45
+1312,c:594,Modem Media,web,acquired,82
+1313,c:59487,Zip Knows,web,operating,16
+1314,c:595,Digitas,web,acquired,66
+1318,c:59644,Direct Vet Marketing,advertising,operating,60
+1320,c:59709,CafeBots,web,closed,90
+1321,c:59793,Classcoup,web,operating,74
+1322,c:59908,Media Glint,enterprise,operating,45
+1324,c:602,Tickle,web,acquired,36
+1325,c:60239,Skull Ninja,software,operating,20
+1326,c:60253,ContraFect,biotech,operating,93
+1327,c:604,JobPilot,web,acquired,97
+1328,c:60470,The Marketer's Continuum,consulting,operating,77
+1329,c:60513,Mira Dx,biotech,operating,81
+1331,c:60578,FUDCorp,games_video,operating,61
+1332,c:60717,CRE Secure,ecommerce,operating,88
+1334,c:60866,Fabrus,biotech,operating,81
+1335,c:60977,ScreenWorks Media,software,operating,40
+1337,c:61066,Xubex,biotech,operating,98
+1338,c:61130,Mockingbird,software,operating,55
+1339,c:61184,Maxae,software,closed,80
+1340,c:61187,NaviVision,ecommerce,operating,68
+1341,c:6121,Wazzala,web,operating,44
+1343,c:61463,Imbee,games_video,operating,95
+1344,c:61707,Shopbop,ecommerce,acquired,83
+1345,c:6171,Gamook,games_video,closed,31
+1346,c:61921,Galvin & Associates,enterprise,acquired,44
+1348,c:62067,Techgone2bad LLC,other,operating,11
+1350,c:62135,BioRegenerative Sciences,biotech,operating,100
+1351,c:6216,BumpTop,software,acquired,29
+1352,c:62163,Vovida Networks,public_relations,acquired,77
+1353,c:62167,ExiO Communications,public_relations,acquired,55
+1354,c:62354,ReadyTalk,public_relations,operating,10
+1356,c:62593,MyGroceryDeals.com,web,operating,46
+1358,c:628,PunchStock,web,acquired,72
+1359,c:62817,Falcon Industries,other,operating,66
+1360,c:62882,FIRST,other,operating,50
+1361,c:62988,CrossAccess,software,acquired,50
+1362,c:63075,Fontdeck,web,operating,78
+1363,c:63157,Celulas Genetica,biotech,acquired,93
+1364,c:63201,Safestorage of Farmington,other,operating,15
+1365,c:63260,IntoMobile,web,operating,11
+1366,c:633,MyZimu,web,operating,95
+1367,c:63343,VentureDeal,web,operating,5
+1369,c:6340,Cozi Group,web,closed,14
+1370,c:636,Itiva,web,operating,96
+1371,c:63615,RapidGiving,web,operating,56
+1372,c:63639,Three Rides,web,operating,58
+1373,c:63669,Code and Theory,advertising,operating,38
+1374,c:6367,Blue Ridge Networks,web,operating,90
+1375,c:63937,Hivext Technologies,network_hosting,operating,48
+1376,c:63980,LDB Consulting,software,acquired,41
+1377,c:64001,Realware,software,operating,6
+1379,c:64173,Zyrra,ecommerce,operating,100
+1380,c:64490,Nix Hydra Games,games_video,operating,96
+1381,c:64615,Duostack,network_hosting,acquired,48
+1384,c:648,Tacoda,web,acquired,42
+1385,c:64972,Flicksquare,web,operating,95
+1386,c:65006,Interpersonal Technology Group,other,operating,51
+1387,c:6503,Codefast,software,acquired,49
+1391,c:653,Sconex,web,acquired,96
+1393,c:65336,Web Site Source,network_hosting,acquired,77
+1394,c:656,MyOfferPal,web,operating,93
+1396,c:6571,AttendEase,web,operating,40
+1397,c:65893,LaunchBit,advertising,operating,60
+1398,c:660,GTX Global,web,operating,87
+1400,c:66221,Computer Consulting Group,consulting,operating,56
+1401,c:66256,ValuTrex,ecommerce,operating,28
+1405,c:66463,Concert Connect,games_video,operating,16
+1409,c:669,Intermix Media,web,acquired,73
+1410,c:66929,Area/Code,games_video,acquired,62
+1412,c:66951,Kraig Biocraft Laboratories,biotech,operating,93
+1413,c:671,Tradera,web,acquired,58
+1414,c:67173,Decideware,software,operating,19
+1415,c:67276,Wherewolf,mobile,operating,18
+1416,c:67495,MetaNeer Labs,mobile,operating,88
+1417,c:67496,yoyouwantto,web,operating,21
+1418,c:675,Open List,web,acquired,65
+1420,c:678,dMarc Broadcasting,web,acquired,35
+1421,c:67812,VoIP-Pal,public_relations,operating,71
+1423,c:6796,Digital Insight,web,acquired,85
+1424,c:6798,TechColumbus,enterprise,operating,88
+1425,c:67993,GearVisions,other,operating,19
+1426,c:6800,Trusera,web,closed,5
+1427,c:68469,split(able),ecommerce,closed,94
+1428,c:68728,ModelKarma,games_video,operating,84
+1429,c:68742,SearchReviews,web,operating,94
+1431,c:68785,KinMob,web,operating,83
+1433,c:68967,Attachments.me,software,acquired,98
+1437,c:6941,ICANN,public_relations,operating,25
+1438,c:6955,Affinity Mobile,web,operating,64
+1440,c:69571,ElementsLocal,software,operating,57
+1441,c:69820,CardioFocus,biotech,operating,65
+1442,c:69839,CTI Molecular Imaging,biotech,acquired,5
+1443,c:6996,Sport Interactiva,games_video,acquired,57
+1444,c:70006,Compu-Techs Computer Solutions,other,operating,37
+1445,c:70029,Networld Media Group,advertising,operating,46
+1447,c:70163,Marks Paneth & Shron LLP,consulting,operating,43
+1448,c:70269,Frankly,mobile,operating,5
+1450,c:70315,Wagner Electronics,other,operating,99
+1451,c:70353,Glue Networks,enterprise,operating,73
+1452,c:70406,Wavelength Media,advertising,operating,70
+1455,c:7061,Remember The Milk,web,operating,5
+1456,c:70610,Veniti,biotech,operating,15
+1457,c:70680,AltiGen Communications,public_relations,ipo,13
+1458,c:70727,Readerâs Digest Association,advertising,operating,86
+1459,c:70755,shopnly,ecommerce,operating,78
+1460,c:708,GreenBorder,web,acquired,58
+1461,c:70809,Kite Pharma,biotech,operating,45
+1462,c:70933,Schematic Labs,games_video,operating,95
+1463,c:71007,The Castor Group LLC,consulting,operating,47
+1464,c:7102,Cequel III,consulting,operating,42
+1465,c:7106,FuseCal,software,closed,93
+1466,c:71233,Cytovance Biologics,biotech,operating,84
+1467,c:71277,Lapica Media Companies,ecommerce,operating,4
+1468,c:71471,TurboSquid,other,operating,14
+1469,c:71574,Beetailer,software,operating,58
+1470,c:71586,Involvio,software,operating,52
+1473,c:7174,Bluehost,web,operating,73
+1475,c:71949,Citybot,mobile,operating,80
+1476,c:72137,Trader Corporation,advertising,operating,98
+1479,c:72387,Home Hubbub,web,operating,63
+1480,c:72523,Wall St. Cheat Sheet,public_relations,operating,61
+1481,c:72802,OwnYourInfo,web,operating,9
+1482,c:7285,AblePlay,web,operating,39
+1483,c:72944,PERCIVIA,biotech,operating,29
+1485,c:73243,Local Motors,other,operating,97
+1486,c:73414,Hoopla Software,software,operating,22
+1487,c:73415,Mavens Consulting,consulting,operating,16
+1488,c:73507,Pieceable,mobile,operating,59
+1489,c:73527,Surface Logix,biotech,acquired,38
+1490,c:73797,RVIP Lounge,other,operating,47
+1493,c:7391,Jobitorial,web,acquired,65
+1496,c:74006,Jeroo Inc.,mobile,operating,30
+1497,c:74023,Big Lobby,advertising,operating,72
+1498,c:74069,Pinweel,other,operating,100
+1499,c:74275,Auctus Partners,consulting,operating,59
+1500,c:74487,Autorithmic,enterprise,operating,100
+1501,c:74538,moolpit,advertising,operating,31
+1502,c:74561,youwho,web,operating,5
+1504,c:74679,Cloud Girlfriend,web,operating,79
+1505,c:74723,Gangaroo,web,operating,78
+1506,c:7478,BlueTech,web,operating,1
+1507,c:74926,Norkom Technologies,software,operating,34
+1508,c:75154,Motopia,mobile,operating,80
+1509,c:753,JupiterMedia Corporation,web,acquired,19
+1510,c:75342,Genophen,biotech,operating,34
+1511,c:240780,City Notes,software,operating,76
+1512,c:241068,Revnetics,mobile,closed,92
+1513,c:241072,Power Tower Inc.,hardware,operating,64
+1516,c:241327,StoryPress,web,operating,23
+1517,c:241677,Streamline Health Solutions,biotech,operating,80
+1518,c:242394,Fundzinger,advertising,operating,98
+1521,c:242926,Healthonomy,biotech,operating,12
+1523,c:2430,Accell Telesystems,consulting,operating,92
+1525,c:244007,The Laundry,other,operating,19
+1528,c:244351,Ag9 Software,software,operating,62
+1529,c:244389,Tamarisk Labs,other,operating,73
+1530,c:244395,LocalOn,ecommerce,operating,100
+1531,c:244625,Vape N Vapor,ecommerce,operating,7
+1533,c:244894,OpenCounter,other,operating,6
+1534,c:245356,INTEGRATED BIOPHARMA,biotech,operating,90
+1535,c:245511,Pledge United,enterprise,operating,54
+1536,c:245720,QThru,software,operating,37
+1537,c:246136,Senic,hardware,operating,32
+1538,c:246189,CardConnect,hardware,operating,54
+1539,c:246221,PROFICIO,software,operating,32
+1540,c:246362,Skycheckin,network_hosting,operating,62
+1541,c:246611,ClinicalBox,other,operating,51
+1542,c:24662,UserTesting.com,web,operating,62
+1543,c:246932,Izun Pharmaceuticals,biotech,operating,99
+1544,c:2470,Epicurious,web,operating,65
+1548,c:248088,OxBlue Corporation,enterprise,operating,33
+1549,c:248091,2X Software,enterprise,operating,48
+1550,c:248099,Salon Transcripts,enterprise,operating,84
+1551,c:248180,ISISPOS,enterprise,operating,83
+1552,c:248198,U.S. Census Bureau,enterprise,operating,5
+1553,c:248218,Gage Marketing Group,enterprise,operating,78
+1554,c:248229,ICRealtime,enterprise,operating,75
+1555,c:248244,Magnicode,enterprise,operating,61
+1556,c:248277,Software Ops,enterprise,operating,46
+1557,c:248304,United States Postal Service,enterprise,operating,94
+1558,c:248342,Chaparral Motorsports,ecommerce,operating,98
+1559,c:248364,The New York Public Library,ecommerce,operating,82
+1560,c:248369,SimpleForeclosures.com,ecommerce,operating,85
+1561,c:248379,5th International US,ecommerce,operating,32
+1562,c:248715,PonyCode Corporation,games_video,operating,28
+1563,c:248717,XCO Software,games_video,operating,59
+1564,c:248738,Jetson Creative,games_video,operating,6
+1565,c:248744,Mixaroo,games_video,operating,67
+1566,c:248764,5BY5 Productions,games_video,operating,61
+1567,c:248770,Unknown.com,games_video,operating,18
+1568,c:248779,Calliope Digital,games_video,operating,13
+1569,c:248780,Campbell/Gambill Designs,games_video,operating,87
+1570,c:248834,Apps4Life,games_video,operating,32
+1571,c:248847,Cinemark USA,games_video,operating,55
+1572,c:248875,Hog Bay Software,games_video,operating,15
+1573,c:248915,Pixofactor,games_video,operating,92
+1574,c:248923,S3Technology,games_video,operating,55
+1575,c:248932,PBS KIDS Sprout,games_video,operating,94
+1576,c:248934,Stylem Media,games_video,operating,43
+1577,c:248940,Epic Games,games_video,operating,50
+1578,c:248952,VMBC,games_video,operating,51
+1579,c:249426,2D BOY,games_video,operating,1
+1580,c:249427,Arb Studios,games_video,operating,93
+1581,c:249429,Backabit,games_video,operating,22
+1582,c:249440,The Men Who Wear Many Hats,games_video,operating,44
+1583,c:249443,Dejobaan Games,games_video,operating,61
+1584,c:249446,One Man Left,games_video,operating,51
+1585,c:249450,SideBUMP Studios,games_video,operating,73
+1586,c:249473,DreamHeart,games_video,operating,53
+1587,c:249474,EdgeRift,games_video,operating,36
+1588,c:249481,FlipSide5,games_video,operating,50
+1589,c:249489,Guess Your Songs,games_video,operating,91
+1590,c:249493,inXile Entertainment,games_video,operating,97
+1591,c:249504,Chad Towns,games_video,operating,83
+1592,c:249508,Liv Games,games_video,operating,43
+1593,c:249524,Ryan Eade,games_video,operating,87
+1594,c:249528,Semantix Group,games_video,operating,38
+1595,c:249669,Great Play: Free Games,games_video,operating,3
+1596,c:249689,iKnights,games_video,operating,60
+1597,c:249802,Shark Party,games_video,operating,48
+1598,c:249901,9th Bit Games,games_video,operating,79
+1599,c:249948,Beeline Europe,games_video,operating,56
+1600,c:249974,Claireware Software,games_video,operating,74
+1601,c:250008,Flyclops,games_video,operating,61
+1602,c:250018,Econify,games_video,operating,15
+1603,c:250025,Chair Entertainment Group,games_video,operating,15
+1604,c:250041,Flying Development Studio,games_video,operating,85
+1605,c:250043,Pixel Addicts,games_video,operating,32
+1606,c:250091,iParty! Mobile,games_video,operating,4
+1607,c:250123,La Naus__e,games_video,operating,66
+1608,c:250124,LDS Apps by Lift,games_video,operating,76
+1609,c:250140,Manomio,games_video,operating,68
+1610,c:250155,MoonBeam Development,games_video,operating,87
+1611,c:250172,Neon Games,games_video,operating,100
+1612,c:250207,Pixel Mine,games_video,operating,78
+1613,c:250209,PlayScreen,games_video,operating,2
+1614,c:250251,Shayes Apps,games_video,operating,57
+1615,c:250263,Spry Fox,games_video,operating,7
+1616,c:250294,SocialSoft,games_video,operating,9
+1617,c:250298,Tiny Mobile,games_video,operating,96
+1618,c:250313,Vellum Interactive,games_video,operating,96
+1619,c:250325,White Whale Games,games_video,operating,39
+1620,c:250338,2BME Studios,games_video,operating,83
+1621,c:250381,American National Property And Casualty Company,games_video,operating,3
+1622,c:250387,Appkruti,games_video,operating,79
+1623,c:250390,App Minis,games_video,operating,8
+1624,c:250396,Appsforcure,games_video,operating,5
+1625,c:250429,Berk Box,games_video,operating,50
+1626,c:250446,Bluecloud,games_video,operating,42
+1627,c:250485,Clever Fox,games_video,operating,85
+1628,c:250525,Cyan Worlds,games_video,operating,98
+1630,c:250593,phuong vo,games_video,operating,47
+1631,c:250607,Evil Laugh Games,games_video,operating,35
+1632,c:250623,Finger Arts,games_video,operating,48
+1633,c:250656,Game Circus,games_video,operating,69
+1634,c:250713,Haywoodsoft,games_video,operating,76
+1635,c:250720,Hidden Variable Studios,games_video,operating,80
+1636,c:250741,Idealix,games_video,operating,83
+1637,c:250780,Jericho Games,games_video,operating,61
+1638,c:250809,Neil A. Kjos Music,games_video,operating,84
+1639,c:250831,Last Day of Work,games_video,operating,93
+1640,c:250834,Legacy Interactive,games_video,operating,30
+1641,c:250862,Major 4 Apps,games_video,operating,64
+1642,c:250884,Massive Holdings,games_video,operating,73
+1643,c:250906,MobilityWare,games_video,operating,14
+1644,c:250999,Peak Systems,games_video,operating,14
+1645,c:251035,Pocket Zebra,games_video,operating,1
+1646,c:251040,Prestige Gaming,games_video,operating,97
+1647,c:251043,Product Madness,games_video,operating,20
+1648,c:251104,Secret Headquarters,games_video,operating,42
+1649,c:251114,SilverMoon Games,games_video,operating,6
+1650,c:251127,Sky Parlor Studios,games_video,operating,93
+1651,c:251142,SNK PLAYMORE,games_video,operating,48
+1652,c:251144,Soap Creative,games_video,operating,72
+1653,c:251202,Tapstic,games_video,operating,81
+1654,c:251214,TenPearls,games_video,operating,87
+1655,c:25122,Humphrey Enterprises,software,operating,57
+1656,c:251229,Thy Word is True,games_video,operating,35
+1657,c:251244,Top Free Games Factory,games_video,operating,17
+1658,c:251254,Toy Studio,games_video,operating,92
+1659,c:251282,Venan Entertainment,games_video,operating,11
+1660,c:251283,Vertical Moon,games_video,operating,85
+1661,c:251295,VIZ Media,games_video,operating,28
+1662,c:251312,Wooblue,games_video,operating,14
+1663,c:251370,Tantrum Apps,games_video,operating,86
+1664,c:25146,Riverside Company,other,operating,59
+1665,c:2517,Project10X,consulting,operating,54
+1667,c:2530,ePillager,software,operating,94
+1668,c:253101,Todoroo,mobile,operating,11
+1669,c:253140,RichTech,mobile,operating,14
+1670,c:253161,9 Square,mobile,operating,64
+1671,c:253163,ADEV,mobile,operating,26
+1672,c:253169,AmberAlertGPS,mobile,operating,15
+1673,c:253170,Antecea,mobile,operating,51
+1674,c:253189,Cre8tive Apps,mobile,operating,74
+1675,c:253235,The Omni Group,mobile,operating,29
+1676,c:253257,Ten 8 Industries,mobile,operating,50
+1677,c:253280,mSeven Software,mobile,operating,39
+1678,c:25330,Linkage Biosciences,biotech,operating,66
+1679,c:25397,ScrewAttack Entertainment,web,operating,58
+1681,c:254419,MiCommand,mobile,operating,14
+1682,c:254492,Headlight Software,mobile,operating,57
+1683,c:254598,Radiantlabs,mobile,operating,91
+1684,c:254610,Neuron Industries,mobile,operating,23
+1685,c:254619,ProtectStar,mobile,operating,74
+1686,c:254623,Hypnosis & Subliminal,mobile,operating,35
+1687,c:254649,Nick Vellios,mobile,operating,94
+1688,c:254652,Vurgood Applications,mobile,operating,69
+1689,c:254656,Wikreate,mobile,operating,55
+1690,c:254677,KPLC,mobile,operating,62
+1691,c:254683,Raycom Media,mobile,operating,58
+1692,c:254688,WDBJ Television,mobile,operating,64
+1693,c:254689,WKYC TV,mobile,operating,49
+1694,c:254691,Lilly Broadcasting,mobile,operating,78
+1695,c:254697,Canty & Associates,mobile,operating,13
+1696,c:254719,McNeil-PPC,mobile,operating,90
+1697,c:25474,Solus Biosystems,biotech,closed,70
+1698,c:254767,Northern Lights Media,mobile,operating,63
+1699,c:254786,Advenio,mobile,operating,27
+1700,c:254792,Asbury Mobile,mobile,operating,23
+1701,c:254793,The Bay Area Air Quality Management District,mobile,operating,63
+1702,c:254804,Davis Instruments,mobile,operating,51
+1703,c:254826,KHAS-TV,mobile,operating,59
+1704,c:254842,Weather Apps,mobile,operating,20
+1705,c:2549,Mobixell Networks,mobile,operating,69
+1708,c:255490,Latitude Learning,software,operating,79
+1711,c:25628,PromoteWare,web,operating,28
+1712,c:25632,CherryRoad Technologies,consulting,operating,73
+1713,c:256335,DigitalCiggz.com,ecommerce,operating,55
+1715,c:256477,DARA BioSciences,biotech,operating,75
+1717,c:25650,Truckeo,ecommerce,operating,76
+1718,c:256544,Cinovate,consulting,operating,6
+1719,c:256738,Shared Spectrum,software,operating,48
+1721,c:25696,Pragmatic Works,enterprise,operating,37
+1722,c:257,Myfacepage,other,operating,96
+1723,c:25703,Haemonetics,biotech,ipo,31
+1724,c:25707,R&E International,software,acquired,96
+1725,c:25720,Omni-ID,hardware,operating,72
+1726,c:25721,Zymeworks,biotech,operating,17
+1727,c:25722,Athenix,biotech,acquired,67
+1728,c:257360,The Schultz Company,ecommerce,operating,11
+1731,c:257569,Picmonic,biotech,operating,39
+1732,c:25757,Backstage,web,operating,71
+1733,c:25763,MEDecision,software,operating,21
+1735,c:25778,Magen BioSciences,biotech,acquired,41
+1736,c:25787,Pipeline Financial Group,enterprise,operating,42
+1737,c:25789,Route Sense,network_hosting,acquired,20
+1738,c:258291,PicSides,software,operating,48
+1740,c:2587,groovr,mobile,operating,33
+1742,c:258780,Vital Art and Science,hardware,operating,14
+1743,c:258892,Emerald Therapeutics,biotech,operating,76
+1744,c:258978,Carnival,mobile,operating,69
+1746,c:259251,proteonomix,biotech,operating,36
+1747,c:259696,Evolv Technologies,other,operating,57
+1749,c:2604,MT Mind Technology,web,operating,52
+1750,c:26079,Finsbury Solutions,software,operating,12
+1751,c:260790,Telecom Transport Management,mobile,operating,18
+1752,c:26088,tekGIANTS,consulting,acquired,74
+1753,c:26094,Innovative Enterprise Solutions,software,acquired,83
+1754,c:261135,AppSnack,mobile,operating,80
+1755,c:261217,iNvolved Media,advertising,operating,89
+1756,c:261226,Fezzee,software,operating,14
+1758,c:26130,Widearea Systems,software,operating,58
+1759,c:261390,Owl biomedical,biotech,operating,92
+1760,c:26145,Firefly Database Solutions,software,acquired,7
+1761,c:26151,Control Solutions,other,acquired,44
+1762,c:261570,MagicRuby,software,operating,40
+1763,c:261592,MyRxCoupons,ecommerce,operating,23
+1765,c:261952,SecurePay,ecommerce,operating,23
+1766,c:261957,Shoutback Concepts,advertising,operating,10
+1767,c:261973,Foster Web Marketing,consulting,operating,8
+1768,c:261997,Strata Marketing,advertising,operating,33
+1769,c:262003,The Pulse Network,advertising,operating,7
+1770,c:262021,Zeeto Media,advertising,operating,84
+1771,c:262023,Zoovy,ecommerce,operating,39
+1778,c:262765,20spokes,consulting,operating,61
+1779,c:26280,LaurelTech,other,acquired,57
+1780,c:263028,psGive,other,operating,83
+1782,c:263331,TravelStorysGPS,software,operating,47
+1783,c:263349,eTrak,other,operating,90
+1784,c:2635,Skobee,web,operating,92
+1785,c:263561,EVS Glaucoma Therapeutics,biotech,operating,96
+1786,c:26358,Ph03nix New Media,games_video,closed,69
+1788,c:263863,Leotus,hardware,operating,8
+1789,c:263923,Imperium Health Management,biotech,operating,91
+1790,c:263935,Hope Street Media,web,operating,74
+1791,c:263937,HourlyNerd,consulting,operating,17
+1792,c:264239,beneSol,biotech,operating,56
+1793,c:264311,CreaTiV Media Group,advertising,operating,24
+1795,c:264444,Wimoto Technologies,hardware,operating,6
+1796,c:264707,Nerd Kingdom,software,operating,69
+1797,c:264774,Proxi,games_video,operating,78
+1799,c:264861,LYFE Mobile,advertising,operating,74
+1800,c:264934,ActionX,mobile,operating,22
+1801,c:264951,Blowout Boutique,ecommerce,operating,61
+1802,c:265239,BitWall,software,operating,66
+1803,c:26533,Danoo,advertising,acquired,39
+1804,c:26571,SignaCert,software,operating,34
+1805,c:265772,Cool Lumens,hardware,operating,5
+1806,c:265811,Angoss Software,software,operating,68
+1807,c:265908,Primalogik Software Solutions,software,operating,29
+1808,c:26607,DiveIntoThePool.com,web,operating,65
+1809,c:266554,Castle Hill,web,operating,82
+1811,c:266809,UpDesk,hardware,operating,98
+1812,c:266838,Concert Telecommunications,network_hosting,operating,31
+1813,c:266847,Songlily,ecommerce,operating,37
+1814,c:26690,Venturi Wireless,mobile,operating,78
+1817,c:267143,Hotspot,mobile,operating,86
+1818,c:26729,Calistoga Pharmaceuticals,biotech,acquired,17
+1820,c:267304,ustyme,software,operating,96
+1821,c:26738,Lightera,public_relations,acquired,76
+1822,c:267566,COH,biotech,operating,77
+1823,c:267573,4Tech,biotech,operating,98
+1824,c:26761,California 7 Studios,games_video,acquired,36
+1825,c:26762,TrueSpan,mobile,closed,9
+1826,c:267760,BioInspire Technologies,biotech,operating,26
+1827,c:267776,Yvolvr,software,operating,18
+1828,c:26778,eXMeritus,network_hosting,acquired,22
+1829,c:267783,Reorg Reseach,other,operating,6
+1830,c:267786,HubHuman,other,operating,39
+1831,c:2680,Oracle Corporation,enterprise,ipo,74
+1832,c:268269,Kairos4,other,operating,33
+1833,c:268335,Velocomp,other,operating,95
+1834,c:268344,CampusEAI Consortium,consulting,operating,68
+1835,c:268379,PayUsLessRx.com,ecommerce,operating,39
+1837,c:268500,Switchfast Technologies,consulting,operating,21
+1839,c:268640,SRS Holdings,biotech,operating,34
+1841,c:268647,Western PCA Clinics,biotech,operating,84
+1842,c:268659,IDEA SPHERE,biotech,operating,83
+1843,c:268666,Medical Device Innovations,biotech,operating,84
+1844,c:268715,Rebiotix,biotech,operating,72
+1845,c:26874,Business Oriented Systems Software,consulting,operating,22
+1846,c:268798,Westfield Labs,ecommerce,operating,77
+1847,c:268872,SmartHabitat,hardware,operating,52
+1848,c:268885,Innovative Acquisitions,biotech,operating,49
+1849,c:268886,Providence Surgery,biotech,operating,100
+1850,c:268903,Sixty Second Parent,software,operating,16
+1851,c:26908,ASTECH InterMedia,public_relations,acquired,50
+1852,c:26913,Onvaio,enterprise,acquired,33
+1853,c:269391,Foranima,ecommerce,operating,51
+1854,c:269493,Lender Sentinel,software,operating,72
+1855,c:269602,Thinkmojo,advertising,operating,65
+1856,c:269643,LionShare Media,mobile,operating,52
+1857,c:269920,Beyond Hosting,network_hosting,operating,34
+1858,c:269974,Soft Health Technologies,software,operating,38
+1859,c:269990,WelVU,software,operating,42
+1860,c:270070,Chemlogic,other,acquired,45
+1861,c:270170,ReeMatch,other,operating,40
+1863,c:270205,Tilled Minds,software,operating,35
+1864,c:270211,Right Relevance,web,operating,18
+1866,c:27035,ChefMom.com,web,acquired,43
+1867,c:270431,Synappio,software,operating,100
+1869,c:270723,Center for the Advancement of Science in Space,other,operating,35
+1870,c:270730,Dilas Intl Customs Brokers,consulting,operating,98
+1871,c:270809,Iris Mobile,mobile,operating,81
+1872,c:271158,Opegi Holdings,hardware,operating,51
+1875,c:271185,Aliphcom,mobile,operating,42
+1876,c:271195,Audiotoniq,hardware,operating,43
+1877,c:271303,D3Banking,software,operating,96
+1880,c:271796,Teak,advertising,operating,37
+1882,c:2723,The Bump,web,acquired,9
+1883,c:272411,Refac Holdings,other,operating,7
+1884,c:27242,Axon Solutions,software,operating,99
+1885,c:272621,Klique,other,operating,38
+1886,c:27273,Integrated Quality,software,acquired,57
+1888,c:273083,MyCrowd,software,operating,24
+1889,c:273427,Incentivyze,enterprise,operating,48
+1890,c:273478,Noquo,other,operating,75
+1891,c:273491,Screenie,other,operating,23
+1892,c:27354,Oraya Therapeutics,biotech,operating,6
+1893,c:27378,DirecTECH Southwest,hardware,acquired,53
+1894,c:2740,Particle,web,acquired,31
+1896,c:274173,EPAM,software,operating,50
+1897,c:274211,Jump Ramp Games,mobile,operating,3
+1898,c:274246,Build & Imagine,games_video,operating,14
+1899,c:274247,Sellegit.com,web,operating,3
+1900,c:27441,Relievant Medsystems,biotech,operating,90
+1902,c:27454,ARYx Therapeutics,biotech,closed,25
+1903,c:274860,Defense Mobile,mobile,operating,39
+1904,c:274862,Modustri,other,operating,77
+1905,c:274895,Silicon Valley IT,other,operating,92
+1907,c:275153,Driverdo,other,operating,76
+1908,c:275155,7mb Technologies,software,operating,66
+1909,c:27516,Cramer Development,software,operating,14
+1910,c:2752,Heavy Electrons,web,operating,92
+1911,c:275392,Lesson.ly,enterprise,operating,31
+1912,c:275402,Five Elements Robotics,hardware,operating,36
+1913,c:275466,Adaptive Technologies,software,operating,83
+1914,c:275811,Saisei Networks,software,operating,28
+1915,c:275815,BET Information Systems,software,operating,9
+1916,c:275823,Immy,software,operating,45
+1917,c:275854,HighFive Mobile,mobile,operating,11
+1918,c:275952,Pango Shyyny,mobile,operating,30
+1919,c:276289,SpkrBar,web,operating,94
+1923,c:276676,Zolpy,ecommerce,operating,50
+1925,c:277077,Stoneside,other,operating,97
+1926,c:27715,Digital View,hardware,operating,31
+1927,c:277176,XS International,enterprise,operating,84
+1928,c:277285,Viooz,other,operating,36
+1929,c:277480,AgileCraft Software,software,operating,15
+1930,c:277522,ICOR Technology,other,operating,63
+1931,c:277606,Atlas Therapeutics,biotech,operating,46
+1932,c:277693,PlowMe,other,operating,83
+1934,c:277903,Accessbio,biotech,operating,82
+1935,c:277990,ShareAd,advertising,operating,54
+1936,c:278360,Iid Security,other,operating,22
+1937,c:278392,SURF Incubator,other,operating,85
+1938,c:278550,IF Technologies,biotech,operating,47
+1939,c:278613,The Love Architects,other,operating,3
+1942,c:279,DZOIC,web,operating,13
+1944,c:279143,innocutis,biotech,operating,5
+1945,c:2793,Weblistit,advertising,acquired,22
+1946,c:279433,Flywheel Healthcare,biotech,operating,5
+1947,c:279497,VSH,biotech,operating,48
+1948,c:279520,American Prison Data Systems,software,operating,33
+1949,c:279521,Graphsql,other,operating,22
+1950,c:279880,BASIS,advertising,operating,14
+1951,c:280240,Transilio,other,operating,83
+1953,c:280264,Shoulder Options,hardware,operating,82
+1954,c:280270,No Surprises Software,software,operating,36
+1956,c:28038,SparkWords,web,operating,80
+1958,c:280525,Jaunt,software,operating,72
+1959,c:280552,Dimension Therapeutics,biotech,operating,36
+1960,c:280576,SHOP THE TRENDS,ecommerce,operating,23
+1961,c:280610,WordRake,software,operating,38
+1964,c:28079,CommuniClique,software,operating,37
+1965,c:281035,Vitruvias Therapeutics,biotech,operating,100
+1966,c:281106,Yoflowers & Gifts LLP,ecommerce,operating,94
+1967,c:281182,Rodo Medical,biotech,operating,98
+1968,c:28137,WiredBenefits,other,operating,97
+1969,c:281393,Intellipharmaceutics International,biotech,ipo,65
+1970,c:281557,Glassful,ecommerce,operating,64
+1971,c:281851,Kensho Technologies,software,operating,98
+1972,c:281942,MBS HOLDINGS,mobile,operating,79
+1973,c:281965,Centrexion,biotech,operating,66
+1975,c:282226,Ramsys Telecommunications Incorporated,network_hosting,operating,19
+1977,c:282259,TekStream Solutions,software,operating,57
+1978,c:282268,Squidbid,web,operating,33
+1980,c:282597,Revert,software,operating,68
+1981,c:282753,MarketingSuite,other,operating,2
+1982,c:282872,Artifact Technogies,software,operating,10
+1983,c:282874,Cingulate Therapeutics,biotech,operating,40
+1984,c:282875,RealDeck,software,operating,98
+1985,c:282887,Prevention Pharmaceuticals,biotech,operating,100
+1986,c:282933,Advanced Biomedical Technologies,biotech,operating,72
+1987,c:28295,Imaginatik,enterprise,operating,88
+1988,c:282977,WiFi Rail,mobile,operating,62
+1989,c:2830,Grasshopper,public_relations,operating,31
+1990,c:283076,ProfitSee,software,operating,41
+1992,c:283398,Clever Machine,software,operating,66
+1993,c:283481,XBT,network_hosting,operating,38
+1994,c:2835,Adzilla,web,operating,92
+1995,c:283500,OraPharma Topco Holdings,biotech,operating,24
+1996,c:283525,Lixte Biotechnology Holdings,biotech,operating,33
+1997,c:283667,Cryoocyte,other,operating,19
+1998,c:283760,Myer,ecommerce,operating,33
+1999,c:284028,Fortune Softtech Detroit,software,operating,76
+2000,c:284196,Bolt HR,software,operating,25
+2002,c:284394,Libri Mobile,advertising,operating,63
+2004,c:284526,Studio Neat,hardware,operating,68
+2005,c:284574,Platypi,other,operating,40
+2006,c:284575,Cheyenne Mountain Games,games_video,operating,7
+2007,c:284579,VenatoRx Pharmaceuticals,biotech,operating,63
+2008,c:284589,Spring Pharmaceuticals,biotech,operating,22
+2009,c:284590,Cumed,biotech,operating,8
+2010,c:284593,Fleet Management Holding,other,operating,86
+2013,c:284742,Thriveon New Ulm,consulting,operating,46
+2014,c:284853,INSTRIBUTION,mobile,operating,22
+2019,c:28537,LibreDigital,hardware,acquired,80
+2020,c:285501,Mid-America consulting Group,biotech,operating,16
+2021,c:2856,BOOMj,web,acquired,10
+2022,c:285617,Elemental Foundry,other,operating,35
+2023,c:285649,Pixie Technology,software,operating,70
+2024,c:285757,Vumanity Media,web,operating,2
+2025,c:286043,Gatheredtable,other,operating,33
+2030,c:28779,CS3 Technology,consulting,operating,94
+2031,c:28847,New York Commerce Group,software,acquired,99
+2032,c:28965,iDive,other,operating,49
+2033,c:29002,Compendia Bioscience,biotech,acquired,42
+2035,c:29022,Teres Solutions,software,acquired,18
+2036,c:29029,NETCO ENTERPRISES,consulting,operating,40
+2037,c:29089,Enterprise Consulting Services,software,acquired,52
+2038,c:2910,Humanized,software,operating,7
+2040,c:29270,XenScale,network_hosting,operating,37
+2041,c:29292,Eiki International,hardware,operating,1
+2042,c:29334,MarketQuiz,enterprise,acquired,71
+2043,c:29380,k-Technology,software,acquired,70
+2044,c:29389,Masher Media,games_video,operating,85
+2045,c:294,Relationals,web,operating,68
+2046,c:29436,Gene codes,software,operating,31
+2047,c:2960,Vidmeter,web,acquired,37
+2048,c:2972,Giant Realm,web,acquired,48
+2049,c:2977,Phantom Fiber,mobile,operating,54
+2050,c:299,Nononina,web,operating,47
+2051,c:29904,DailyBooth,public_relations,acquired,63
+2052,c:29934,McDash Analytics,software,operating,51
+2053,c:29956,iStorez,web,acquired,96
+2054,c:30050,Digital Proctor,software,operating,84
+2055,c:30104,Xcel Group,consulting,operating,61
+2056,c:30105,AGLOGIC,consulting,operating,14
+2058,c:30191,CONEXXUS,software,operating,92
+2060,c:3035,SlideAware,web,closed,90
+2061,c:30579,San Diego Padres,other,operating,25
+2062,c:30686,BusinessMart.com,ecommerce,acquired,2
+2063,c:30817,EllisLab,software,operating,50
+2065,c:30911,Tweets Lounge,web,operating,16
+2066,c:30936,Zumobi,mobile,operating,47
+2067,c:3097,RiverWired,network_hosting,operating,64
+2068,c:3100,Photrade,web,closed,38
+2069,c:31116,Jenson Services,biotech,operating,41
+2071,c:3115,Typeroom,web,operating,39
+2072,c:3122,NeoEdge Networks,advertising,acquired,39
+2073,c:3135,Kidaro,enterprise,acquired,24
+2074,c:31439,CorpTropolis,web,operating,26
+2075,c:31442,NimbleSource,consulting,operating,24
+2076,c:31453,Vaccsys,biotech,closed,50
+2078,c:3178,Elastra,software,closed,56
+2079,c:3198,Yosemite Technologies,network_hosting,acquired,93
+2080,c:32148,NuMobile,software,ipo,86
+2081,c:3218,aQuantive,web,acquired,79
+2082,c:3220,Lightningcast,web,acquired,66
+2083,c:32215,OptionEase,software,acquired,95
+2084,c:32255,Infoharmoni,software,operating,66
+2086,c:3238,tsumobi,software,operating,95
+2087,c:32491,Enobia Pharma,biotech,acquired,4
+2088,c:32501,iSOFT Group,software,operating,43
+2089,c:32508,Theken Spine,biotech,operating,17
+2090,c:3252,DayPort,advertising,acquired,54
+2091,c:32520,Cochlear,biotech,operating,36
+2092,c:32524,Hawaii Medical,biotech,acquired,48
+2093,c:32532,United States Surgical Corporation,biotech,operating,92
+2094,c:32534,Synovis Life Technologies,biotech,operating,92
+2095,c:3257,buy.at,advertising,acquired,28
+2096,c:32639,Han Logistics,software,operating,29
+2097,c:32697,ValueBound.in,software,operating,59
+2098,c:33750,Mistras Group,enterprise,ipo,47
+2099,c:33790,Free All Media,games_video,operating,76
+2101,c:33893,Origen Partners,advertising,acquired,69
+2103,c:340,Citizenbay,web,closed,42
+2104,c:3420,PopJax,web,operating,73
+2105,c:34260,Macrae's Blue Book,advertising,operating,62
+2106,c:34270,gigzee,games_video,operating,37
+2107,c:3452,InformedMD,web,operating,43
+2110,c:34820,Doppler Email Marketing,software,operating,3
+2111,c:34866,ApartmentSmart.com,other,operating,23
+2112,c:34984,VitaPath Genetics,biotech,operating,86
+2114,c:35121,runmyerrand,other,operating,79
+2115,c:35157,Viacor,biotech,closed,2
+2119,c:35335,Namtra Business Solutions,software,operating,61
+2120,c:3535,Homestead Technologies,web,acquired,60
+2121,c:35353,Accolo,consulting,operating,28
+2123,c:35476,Veratect,biotech,closed,36
+2124,c:35480,Site9,software,operating,62
+2125,c:35485,UniVoIP,public_relations,operating,21
+2126,c:35487,Privy.net,web,operating,25
+2127,c:35491,CentricInfo,consulting,operating,52
+2128,c:35495,Serendeputy,web,operating,91
+2129,c:35589,Altair Therapeutics,biotech,closed,92
+2130,c:35594,wondertouch,web,acquired,73
+2131,c:3583,Desk Cafe,web,operating,64
+2132,c:35864,ZoomAtlas,web,operating,7
+2133,c:359,Mattel,web,operating,51
+2134,c:3593,Syrinx Consulting,web,operating,78
+2135,c:35959,Nexyoo,advertising,operating,52
+2136,c:3607,Manyeta,biotech,operating,37
+2137,c:3608,DistinctHorizon,software,operating,14
+2138,c:36301,hField Technologies,software,operating,62
+2139,c:36316,Receptos,biotech,operating,34
+2140,c:36335,OtherNum,public_relations,operating,78
+2141,c:36348,Elf Island,games_video,operating,91
+2142,c:36357,CreateMyCookbook,other,operating,61
+2144,c:7561,Sonya Labs,web,closed,79
+2145,c:758,Web Clients,web,acquired,94
+2146,c:75818,Spiffy Pixel Inc.,software,operating,75
+2147,c:75924,SourceSolution,software,operating,44
+2148,c:75937,Kinex Pharmaceuticals,biotech,operating,46
+2149,c:76039,Krave Media Group,advertising,operating,88
+2150,c:76063,Springleaf Therapeutics,biotech,operating,1
+2151,c:7618,Vonage,mobile,ipo,44
+2152,c:7619,CBeyond,web,operating,99
+2154,c:76599,WeTalky,software,operating,43
+2155,c:7663,Bones in Motion,web,operating,96
+2157,c:7705,Clicklab,software,operating,22
+2158,c:77142,Splick-it,ecommerce,operating,64
+2159,c:77245,OperaGram.com,other,operating,25
+2162,c:77414,Pathway Therapeutics,biotech,operating,2
+2163,c:7752,Alltop,web,operating,36
+2164,c:77732,iText Software Corp.,software,operating,26
+2166,c:77862,Toon Bee,software,operating,25
+2167,c:77890,Checkd.In,public_relations,operating,20
+2168,c:77973,Esperance Pharmaceuticals,biotech,operating,18
+2172,c:78455,Dollars.com,web,operating,87
+2174,c:78591,Ice Nine Biotechnologies,biotech,operating,38
+2175,c:78720,AppGrooves,mobile,operating,80
+2176,c:78850,LogicPad,web,operating,48
+2177,c:78915,Airrands,ecommerce,operating,27
+2178,c:79007,Milestone Pharmaceuticals,biotech,operating,61
+2179,c:79103,uReach Technologies,mobile,operating,18
+2181,c:79301,Nemu.it,mobile,operating,61
+2182,c:79362,EventMobi,mobile,operating,78
+2184,c:79538,BW Printworks,other,operating,2
+2187,c:8006,Numedeon,games_video,operating,74
+2189,c:80232,Jack Detroit,other,operating,37
+2190,c:80251,Bose International Investement Fund,software,operating,96
+2192,c:8044,Data Domain,enterprise,acquired,4
+2193,c:80530,Ad Energy,other,operating,8
+2194,c:80554,yable,mobile,operating,8
+2195,c:8061,Skorpiostech,software,operating,20
+2196,c:8062,Renkara Media Group,software,operating,80
+2197,c:80720,Gamzee,games_video,closed,49
+2198,c:8074,Acumen Solutions,consulting,operating,66
+2199,c:80775,Yostro,public_relations,acquired,90
+2200,c:81068,Intercom,software,operating,33
+2201,c:8116,The Code Kitchen,web,operating,25
+2207,c:81464,DQE Communications,public_relations,operating,63
+2208,c:81540,Blue Origin,other,operating,5
+2211,c:81685,INFINITE 3D GROUP,games_video,operating,74
+2214,c:81956,JTM,software,operating,32
+2215,c:82066,DDT Software,games_video,operating,1
+2216,c:82219,StorageTreasures.com,other,operating,95
+2217,c:82511,LocalEdge,other,operating,100
+2218,c:82677,Playsaurus,games_video,operating,62
+2220,c:82886,Dibsie,ecommerce,operating,5
+2223,c:8309,jamcode,mobile,operating,60
+2224,c:83273,Throne Media Group,advertising,operating,20
+2225,c:83288,Member Desk,ecommerce,operating,13
+2226,c:8338,iLium Software,software,operating,59
+2229,c:83723,Pixowl,games_video,operating,70
+2231,c:83830,Legitmix,software,operating,93
+2232,c:839,Kaboose,web,acquired,4
+2233,c:8397,Webalytics,web,operating,30
+2234,c:841,Fastclick,web,acquired,100
+2235,c:84492,Agility Speaks,software,operating,36
+2236,c:84645,JGI,consulting,acquired,87
+2237,c:8467,OGPlanet,software,operating,36
+2238,c:84869,High Street Partners,software,operating,56
+2240,c:8520,Hit Big Sports,web,operating,74
+2241,c:85253,Innovative Card Solutions,ecommerce,operating,14
+2242,c:85398,halleo,public_relations,operating,69
+2243,c:854,LightSurf,web,acquired,17
+2245,c:855,For-side,web,operating,65
+2246,c:85798,AttendStar,software,operating,97
+2248,c:85928,Bpartment,other,operating,27
+2250,c:86597,Performance Partners,enterprise,operating,17
+2252,c:8764,Imediasee,software,operating,91
+2253,c:8772,DATAllegro,network_hosting,acquired,34
+2254,c:89119,My Compliance Info,other,acquired,43
+2255,c:8946,Broadbus Technologies,hardware,acquired,37
+2256,c:9085,Local Marketers,web,closed,68
+2258,c:9161,Identity.net,web,operating,43
+2259,c:9263,RadioFrame,mobile,closed,9
+2261,c:9434,Swell Pregnancy Guide,public_relations,operating,77
+2262,c:9441,Jam-Mobile.com,software,operating,96
+2263,c:9519,Classtell,web,operating,21
+2265,c:99149,conceptbakery,advertising,operating,61

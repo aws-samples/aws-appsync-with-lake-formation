@@ -1,0 +1,423 @@
+Index,company_id,company_name,category_code,status,owner_id
+5,c:181185,Find Financial Advisors UK,consulting,operating,57
+22,c:183374,Mosaikoo,other,operating,98
+23,c:183453,ANGELCARE AGENCY,other,operating,97
+24,c:183517,Bionic Robotics GmbH,enterprise,operating,61
+25,c:183574,TaskHub,consulting,operating,38
+30,c:184162,Breezie,web,operating,12
+32,c:184747,Barandi Solutions,software,operating,88
+33,c:184752,Iconicfuture,games_video,operating,14
+50,c:186488,unu,hardware,operating,85
+63,c:187832,link bird,enterprise,operating,13
+68,c:188507,Annotag,enterprise,operating,62
+73,c:189425,Harrogate Media,games_video,operating,75
+79,c:190445,AMVROSIA,ecommerce,operating,95
+80,c:190559,Box of Awesome,web,operating,15
+103,c:192724,Hit Reach,web,operating,70
+115,c:193940,Kybotech,ecommerce,operating,35
+116,c:194224,Hoffmeister Leuchten,hardware,operating,63
+120,c:194710,10to8,public_relations,operating,84
+125,c:19521,BlueUnplugged.com,mobile,operating,29
+127,c:195387,ScreachTV,games_video,operating,14
+134,c:196271,carzapp,software,operating,53
+135,c:196272,Movinary,web,operating,89
+136,c:196273,miBaby,ecommerce,operating,99
+137,c:196274,MyLuvs,advertising,operating,18
+138,c:196282,Jochen Schweizer Events,advertising,operating,69
+148,c:198970,Allecra Therapeutics,biotech,operating,18
+151,c:199477,mylearnadfriend,software,operating,18
+165,c:202614,Foxtons,web,operating,95
+166,c:2027,MyDND,web,operating,16
+171,c:205824,MabLyte,biotech,operating,78
+183,c:209968,Socialive,mobile,operating,12
+190,c:211374,PDV,consulting,acquired,32
+192,c:2119,ioko,software,acquired,96
+194,c:21203,Aspects Software,mobile,operating,45
+195,c:212142,R&E Media,ecommerce,operating,77
+196,c:212254,C3London,other,operating,37
+201,c:212985,Intelligent Shipper,software,operating,67
+208,c:214380,Results United,consulting,operating,34
+221,c:2162,VisitorNetworks,hardware,operating,85
+241,c:218215,Project OONA,ecommerce,operating,56
+244,c:218479,Wagemeyer,software,acquired,74
+247,c:218737,insurancewith,other,operating,63
+251,c:219542,Recisio,games_video,operating,53
+253,c:21993,Serious Parody,games_video,operating,56
+254,c:220218,Futurehand,consulting,operating,91
+258,c:2209,Poodz,web,operating,42
+259,c:22127,Dinahosting,network_hosting,operating,59
+264,c:221734,Habbage,web,operating,80
+266,c:222314,Netatmo,mobile,operating,45
+274,c:223282,Door 2 Door London,ecommerce,operating,95
+278,c:224329,Floss Friday,software,operating,23
+281,c:224665,Kookit,ecommerce,operating,35
+284,c:2255,openPeople,web,closed,6
+290,c:225860,Servipp,ecommerce,operating,58
+296,c:227989,Kazam,mobile,operating,65
+311,c:231280,Contiamo,enterprise,operating,40
+316,c:231947,Cambridge Audio,hardware,operating,66
+318,c:2320,Abritel.fr,web,operating,54
+322,c:23257,YachtWorld,advertising,operating,45
+323,c:23258,Boats.com,web,operating,5
+325,c:23306,Ariane Systems,software,operating,81
+326,c:23314,MixCommerce,software,operating,73
+328,c:23324,Virgin Play,games_video,closed,78
+334,c:234423,Nomad Games,games_video,operating,77
+338,c:234871,Comunitats Knowledge Management,software,operating,56
+343,c:23539,Uniteam Communication,web,operating,22
+346,c:23549,Pixways,software,operating,83
+347,c:235653,Zoomteego GmbH,software,operating,48
+349,c:236013,mitoo,network_hosting,operating,82
+351,c:236301,Rockshore,software,operating,26
+356,c:236687,WEBFAMY,consulting,operating,91
+357,c:236775,Carritus,ecommerce,operating,76
+358,c:23705,Silver Lining Solutions,software,operating,65
+359,c:23708,EcoIntense,software,operating,90
+360,c:23709,Neli Technologies,hardware,operating,38
+363,c:23799,Exploredge,ecommerce,operating,4
+366,c:238434,Epigenomics AG,software,operating,32
+371,c:238801,Absynth Biologics,biotech,operating,94
+374,c:239851,Class Instrumentation Ltd,other,operating,49
+381,c:101928,Audiomagnet,games_video,operating,11
+382,c:1024,zSlide,web,operating,38
+393,c:10761,Easy-IT,web,operating,55
+397,c:10970,WWCTN,web,operating,94
+398,c:11023,PCIQ,web,operating,80
+400,c:11196,Wordia,web,operating,38
+401,c:112,Zlio,ecommerce,closed,87
+412,c:11899,Inspirational Stores,ecommerce,operating,23
+427,c:13155,Iven & Hillmann,other,operating,54
+434,c:13390,Internet Cashback,web,operating,96
+435,c:13391,LINKBYNET,web,operating,50
+436,c:13392,Zone-ViP Network,web,operating,61
+438,c:135134,Lulu,mobile,operating,93
+439,c:13530,Vebra,software,operating,46
+443,c:13688,Wysiwyg,consulting,acquired,55
+445,c:13765,Tractis,web,operating,37
+449,c:139162,Browsink,web,operating,80
+452,c:139233,Prixing,ecommerce,operating,70
+460,c:139821,TripMeister,web,operating,97
+470,c:141077,LogicLoop,software,operating,27
+483,c:142837,CRMworks,software,operating,43
+497,c:145185,BeHiring,software,operating,41
+498,c:145193,APPARTINFO,web,operating,80
+522,c:147661,Channel Intellect,consulting,operating,45
+526,c:148078,Server Density,enterprise,operating,39
+528,c:14838,realmovienews.com,web,operating,24
+530,c:148526,Digital School,web,operating,60
+533,c:148694,Bactest,biotech,operating,61
+535,c:148846,GoCardless,ecommerce,operating,82
+540,c:149412,Transiq,ecommerce,operating,9
+541,c:14951,Striker Manager,software,operating,37
+544,c:14960,Oslo Software,enterprise,closed,65
+547,c:149949,Red Advertising,advertising,operating,37
+548,c:150063,Ad2Network,advertising,operating,3
+561,c:150862,regalador.com,ecommerce,operating,15
+563,c:1510,MyNeighborhood,web,operating,82
+564,c:151042,Bodymap.me,ecommerce,operating,74
+568,c:151372,Critizr,web,operating,52
+569,c:151394,Columbus Direct,other,operating,6
+576,c:151830,ClubDeal,ecommerce,operating,2
+589,c:153005,Happnd,web,operating,59
+593,c:153298,Blaffin,web,operating,11
+596,c:153619,BG Stores,ecommerce,operating,44
+608,c:154281,P&R Labpak,other,operating,95
+612,c:155009,Aurasma,mobile,operating,74
+614,c:155125,DropWall,public_relations,operating,98
+616,c:155706,Seven Technologies,hardware,operating,21
+625,c:156310,web care LBJ GmbH,web,operating,11
+630,c:157056,UserReplay,software,operating,67
+632,c:157165,Mindwork Labs,web,operating,86
+633,c:157180,Smart Resorts,mobile,operating,85
+650,c:159691,Open Broadcast Systems,other,operating,27
+651,c:159813,Funky Moves,games_video,operating,38
+652,c:159844,Niji,consulting,operating,78
+654,c:160069,Southern Dreams,consulting,operating,10
+659,c:160812,Maeglin Software,software,operating,16
+660,c:160873,TRP Istanbul,advertising,operating,67
+663,c:161194,BOND GmbH and Co. KG. BOND,software,acquired,99
+671,c:161637,MyAppTracking,mobile,operating,82
+675,c:162155,Zilico,biotech,operating,97
+677,c:162307,payleven,mobile,operating,42
+679,c:162397,Metrigo,advertising,acquired,6
+681,c:162500,MobAd,mobile,operating,16
+683,c:162834,Cookening,web,operating,18
+690,c:163482,Birdback,enterprise,operating,61
+691,c:163996,Gapps,software,operating,9
+692,c:164223,CompXs,mobile,acquired,15
+698,c:164726,Wywy,software,operating,49
+700,c:164851,eventsofa,ecommerce,operating,94
+703,c:165068,Simply Ecommerce,web,operating,54
+707,c:165717,PriceDrag,ecommerce,operating,91
+708,c:165745,TruVenturo,other,operating,71
+717,c:166685,KISS Consulting,consulting,operating,27
+718,c:166903,Rentals London,consulting,operating,2
+731,c:167420,Prints.co.uk,ecommerce,operating,52
+732,c:16745,gyn.de,web,operating,16
+736,c:167674,Deminos,consulting,operating,62
+739,c:167971,dimensio informatics,software,operating,77
+741,c:168449,MCB Web Design,web,operating,62
+742,c:168653,BASELABS,software,operating,50
+747,c:169403,Intellismiths,software,operating,84
+756,c:170286,Albany Software,software,acquired,95
+759,c:170520,Brentwood Communications,public_relations,operating,26
+769,c:17144,Mobile Productivity,mobile,operating,21
+775,c:17161,Tag Games,mobile,operating,89
+776,c:171661,House Map,mobile,operating,58
+781,c:171909,City Internships,other,operating,81
+784,c:17210,Agharta Studio,mobile,operating,26
+785,c:17213,Toyspring,mobile,operating,36
+795,c:172897,Away Holidays,other,operating,16
+803,c:173423,BiOxyDyn,biotech,operating,48
+807,c:17366,Wolff Olins,consulting,operating,23
+811,c:174138,Qoniac,software,operating,16
+812,c:174139,Sentex,hardware,operating,31
+813,c:174141,Druck und Werte,consulting,operating,19
+814,c:174143,Pharetis,web,operating,93
+817,c:174240,Oppenheim & Co Limited,consulting,operating,56
+822,c:174670,Open Energi,software,operating,36
+823,c:174673,UWI Technology,biotech,operating,6
+828,c:175002,SmarterKey,hardware,operating,10
+829,c:17504,C9 Radio,other,operating,77
+839,c:17577,Neuwert Media,mobile,operating,61
+840,c:17578,Cobra Mobile,mobile,operating,85
+841,c:175818,Bathroom Saver,ecommerce,operating,43
+854,c:176276,HowDo,mobile,operating,20
+859,c:176834,FAGUO,mobile,operating,23
+860,c:176845,MyDeals.com,web,operating,31
+872,c:177940,Baines-Savage,other,operating,93
+873,c:178394,Storemates,web,operating,21
+874,c:178438,Gigaclear,network_hosting,operating,3
+876,c:178496,Inter Equine,ecommerce,operating,25
+879,c:178617,Juncode,mobile,operating,16
+880,c:17868,SpeedSix Software,games_video,acquired,77
+882,c:178981,YouScribe,ecommerce,operating,85
+899,c:36632,Research Now,other,acquired,84
+912,c:37459,Diurnal,biotech,operating,68
+922,c:37905,Cytocentrics,biotech,operating,43
+942,c:3875,YATEO,web,operating,10
+948,c:38901,Syntropharma,biotech,operating,47
+953,c:39298,Encipher,other,operating,34
+963,c:39622,Ma-papeterie,ecommerce,operating,88
+964,c:39631,sunshine.co.uk,ecommerce,operating,81
+967,c:39698,Mobilinga,mobile,operating,58
+969,c:39852,IJENKO (mobigard),public_relations,operating,45
+971,c:39954,International Bibliography of the Social Sciences (IBSS),other,acquired,77
+972,c:40023,Dead Technical,advertising,operating,94
+982,c:40462,Tanfield Direct Ltd.,ecommerce,closed,98
+986,c:40806,SCIC SA Adullact Projet,software,operating,16
+990,c:4096,Gofresh,mobile,operating,91
+991,c:40964,Citydeal.de,web,acquired,25
+995,c:41223,RTFM-ed.co.uk,network_hosting,acquired,100
+1006,c:42090,Secret London,web,operating,49
+1018,c:43011,GlobusMedia,software,operating,33
+1022,c:43052,Jeego,software,operating,5
+1026,c:43220,Inhibi Ltd.,software,operating,11
+1028,c:43261,OchreSoft Technologies,software,operating,28
+1031,c:43335,excentos,software,operating,54
+1044,c:43928,Lectus Therapeutics,biotech,closed,77
+1045,c:43996,Seadev-FermenSys,biotech,operating,43
+1051,c:44230,Biocontrol,biotech,acquired,87
+1056,c:44570,Inside Mobile,mobile,acquired,10
+1059,c:44681,WorldStores,ecommerce,operating,94
+1067,c:45138,Iziflux,ecommerce,operating,36
+1068,c:45176,Regioneo,web,operating,80
+1070,c:45248,Mobibase,mobile,operating,6
+1071,c:4528,venyoo,web,operating,97
+1085,c:45801,SoloStocks,ecommerce,operating,98
+1086,c:45822,Rob Hartley Marketing,advertising,operating,87
+1100,c:46627,SuppreMol,biotech,operating,45
+1102,c:46688,Dynamic IT Management Services,software,operating,65
+1104,c:46791,SkemA,software,operating,88
+1109,c:46900,MEDOVENT,biotech,operating,27
+1114,c:47008,m2p-labs,biotech,operating,16
+1115,c:47054,Alai,software,operating,70
+1116,c:47066,PraXcell,biotech,operating,70
+1120,c:47158,Covalent Software,software,operating,24
+1121,c:47159,Anatole,software,operating,58
+1130,c:47556,Veniu,mobile,operating,17
+1131,c:47581,Denkmalimmobilien,consulting,operating,30
+1132,c:47638,iXpert,software,operating,26
+1146,c:48358,yellowstay,ecommerce,operating,13
+1150,c:48828,Hubar's List,web,operating,95
+1155,c:49339,datango,software,operating,87
+1160,c:49713,GCD Systeme,public_relations,operating,79
+1161,c:49718,CholloCity,ecommerce,operating,82
+1162,c:49721,Q Chip,biotech,operating,92
+1163,c:49767,Design LED Products,hardware,operating,75
+1167,c:50166,Glovico,ecommerce,operating,28
+1170,c:50358,CBN Solutions,consulting,operating,33
+1181,c:51062,Lophius Biosciences,biotech,operating,15
+1183,c:51172,Bettermarks,web,operating,21
+1185,c:51310,svh24.de,ecommerce,operating,41
+1187,c:51385,IDOX,software,operating,52
+1188,c:51393,Cosmic Solutions,software,acquired,74
+1191,c:51493,Passman,software,operating,22
+1203,c:51968,Benswers,web,operating,53
+1208,c:52135,1st Call Systems,public_relations,operating,53
+1211,c:52752,Taskmit,web,closed,81
+1212,c:52822,The Agile Monkeys,software,operating,44
+1214,c:52868,Mr Bicho,software,operating,70
+1216,c:53197,Tumbup,web,operating,36
+1218,c:53496,tenderr.com,ecommerce,operating,31
+1230,c:5428,Viral Motion,web,operating,51
+1236,c:54446,reed.co.uk,web,operating,55
+1242,c:54765,KWICK! Community,public_relations,operating,11
+1248,c:55482,Larovo,ecommerce,operating,56
+1257,c:5596,MediaRush,web,closed,17
+1262,c:56244,Fantastic Zero,games_video,acquired,89
+1274,c:56839,Zoom Media & Marketing - UK,advertising,operating,31
+1278,c:57293,MAS Angel Fund,other,operating,24
+1292,c:5796,Zefanclub,web,closed,3
+1296,c:58108,REALTECH AG,software,operating,91
+1298,c:58243,United Ambient Media AG,other,operating,41
+1302,c:58475,Avenso,ecommerce,operating,25
+1303,c:5852,Projektwerk,web,operating,20
+1306,c:58694,Zooplus,ecommerce,operating,29
+1310,c:59277,Tenders.es,web,operating,43
+1316,c:59626,UltraSoC Technologies,hardware,operating,24
+1317,c:5963,gate5,mobile,acquired,66
+1323,c:59959,IfLooksCouldKill,consulting,operating,20
+1330,c:6053,NOTXOR,software,operating,73
+1333,c:60792,V.D.G,consulting,operating,23
+1336,c:6102,link-together,web,operating,55
+1342,c:6133,Valoris,other,operating,99
+1349,c:62069,SERVICEPRIVE,other,operating,9
+1355,c:62546,Brown Trading Corporation,web,operating,14
+1357,c:62795,ViiV Healthcare,biotech,operating,58
+1368,c:63389,Experteer,other,operating,53
+1378,c:64152,TipToken,ecommerce,operating,26
+1383,c:64718,DBV Technologies,biotech,operating,23
+1388,c:6509,Jobisjob,web,operating,35
+1389,c:65155,Centrafair,enterprise,operating,31
+1392,c:65335,Areti Internet,network_hosting,acquired,4
+1399,c:6612,Jobs4uInKent,web,operating,49
+1402,c:66273,Liberata,consulting,operating,19
+1403,c:66349,Toptranslation,ecommerce,operating,64
+1404,c:6639,Creativei Media Web Development,web,operating,59
+1406,c:665,ITV,web,operating,26
+1407,c:66627,Sala International,consulting,operating,9
+1408,c:66779,SmartMembranes,other,operating,11
+1411,c:66950,EVIAGENICS,biotech,operating,45
+1419,c:67658,FInd Any Film,games_video,operating,49
+1422,c:6785,Monetise,ecommerce,acquired,10
+1430,c:68755,SparkleShare,software,operating,81
+1432,c:68832,ASD Solutions,software,operating,80
+1434,c:69021,Unusuals,advertising,operating,84
+1435,c:69072,The i-inspire Group,consulting,operating,55
+1436,c:69227,Bionanoplus,biotech,operating,31
+1439,c:6956,LeadsExplorer,web,operating,98
+1446,c:70087,Ebiquity,advertising,operating,93
+1449,c:70290,Climbing Trees,advertising,operating,5
+1453,c:7044,Vagueware,consulting,operating,10
+1454,c:70601,Dress for Less,ecommerce,acquired,77
+1471,c:71614,The ISIS Corporation,consulting,operating,29
+1472,c:7169,IPC Media,other,operating,23
+1474,c:71769,i-Neumaticos,mobile,operating,56
+1477,c:7220,SYSCOM,software,operating,97
+1478,c:7221,Deutsche Telekom Labs,other,operating,91
+1484,c:7306,Mobile Trend,mobile,acquired,53
+1495,c:73951,Bundeal,ecommerce,operating,9
+1522,c:242928,Oxford Genetics,biotech,operating,56
+1524,c:243776,MindCircl,consulting,operating,62
+1526,c:244151,Scancell,biotech,operating,69
+1527,c:24428,Oncodesign,biotech,operating,93
+1532,c:244765,Calnex Solutions,hardware,operating,67
+1545,c:247023,Rubbee,hardware,operating,98
+1546,c:247130,Costockage,other,operating,21
+1547,c:24747,GCDUK Search,consulting,operating,7
+1666,c:25175,BioMed Central,ecommerce,acquired,2
+1680,c:25400,F2G,biotech,operating,44
+1706,c:255057,Provenance,ecommerce,operating,32
+1707,c:25541,Keen Software House,games_video,operating,35
+1710,c:256227,AK Conception,consulting,operating,23
+1720,c:256948,Hug & Co,web,operating,58
+1730,c:25750,Myhive,mobile,operating,54
+1734,c:25777,Relex Software,software,acquired,33
+1739,c:258408,Swarm64,hardware,operating,28
+1741,c:258754,Companisto,advertising,operating,66
+1748,c:260,Kwiqq,web,operating,39
+1757,c:261265,Alpha Minerals,other,acquired,76
+1764,c:261950,ScreenPulse,mobile,operating,18
+1772,c:26209,Athic Solutions,software,operating,53
+1773,c:26223,CB.Net,enterprise,acquired,41
+1774,c:26230,Netfonics,network_hosting,operating,78
+1776,c:26234,Ulysses IT,enterprise,acquired,66
+1777,c:262347,Qumram,software,operating,2
+1781,c:263296,Sumerian,hardware,operating,1
+1787,c:263622,AppXperience,advertising,operating,98
+1794,c:26444,TripleArc,software,acquired,13
+1815,c:267122,BabyWatch,hardware,operating,65
+1819,c:26730,Chroma Therapeutics,biotech,operating,96
+1836,c:268391,GamaMabs Pharma,biotech,operating,55
+1840,c:268641,Virtual Call Center,software,operating,72
+1862,c:270179,NixonMcInnes,consulting,operating,91
+1865,c:270328,Govtoday,advertising,operating,46
+1868,c:270659,Enabler Mail,enterprise,operating,93
+1873,c:271162,@fbourboulon Conseil,consulting,operating,46
+1874,c:271170,Telepath,software,operating,65
+1878,c:27139,Metasonic,software,operating,78
+1879,c:271700,Men Rock,other,operating,41
+1887,c:273049,Ouest Décision,software,operating,51
+1901,c:274445,Owingo,consulting,operating,9
+1906,c:275043,Shot & Shop,ecommerce,operating,80
+1921,c:276381,LocowL,advertising,operating,89
+1922,c:276487,ReadyCache,enterprise,operating,54
+1924,c:277026,Independend Film Fund Limited,games_video,operating,96
+1933,c:277747,Digital Globe Services,software,operating,48
+1940,c:278667,ÜberResearch,web,operating,55
+1957,c:280449,Spiffy,software,operating,29
+1962,c:280613,TCAS Online,software,operating,43
+1976,c:28224,3D Geo,software,acquired,25
+1979,c:282571,InterQuest Group,consulting,operating,14
+2003,c:284427,Lighthouse,software,operating,26
+2011,c:284688,Blaze,hardware,operating,47
+2012,c:284693,Ploufeo,ecommerce,operating,49
+2015,c:284979,Active Business Communications,other,operating,20
+2017,c:285211,Factomos,software,operating,3
+2018,c:2853,Pixoo,web,operating,74
+2027,c:286151,Definigen,biotech,operating,42
+2028,c:28725,WStore Europe,enterprise,acquired,90
+2029,c:28745,DuoNox,consulting,operating,47
+2034,c:29020,Bright Minds,ecommerce,operating,87
+2039,c:29248,Jaywing,advertising,operating,58
+2057,c:30183,Flasma,advertising,operating,17
+2059,c:30214,eTherapeutics,biotech,operating,47
+2064,c:309,Software Cellular Network,web,operating,26
+2070,c:31128,Cube Interactive,games_video,operating,27
+2077,c:31740,Green Biologics,biotech,operating,20
+2085,c:32305,HÃ¶lle & HÃ¼ttner,biotech,operating,42
+2100,c:33871,Pangora,ecommerce,acquired,94
+2102,c:3391,Glaxstar,software,operating,55
+2108,c:3465,Myrl,web,closed,23
+2113,c:35062,Fenix Directo,ecommerce,operating,46
+2116,c:35161,Stratebi,software,operating,33
+2117,c:35218,AlpinaSearch,consulting,operating,83
+2118,c:35221,Native,public_relations,operating,96
+2143,c:75518,Lumatix,software,closed,75
+2153,c:76386,Neoxia,consulting,operating,30
+2160,c:77255,KineticaRT Limited,software,operating,13
+2161,c:77348,NewField IT,software,acquired,11
+2165,c:7777,ViaMobility,mobile,operating,20
+2170,c:78056,GEOLID,advertising,operating,5
+2171,c:78239,Fashionbase,web,operating,21
+2173,c:78491,TriOviz,hardware,operating,93
+2180,c:79258,Appealing Media,advertising,acquired,1
+2183,c:79434,BLOOCLICK,other,operating,88
+2185,c:79740,Pistachio,web,operating,6
+2186,c:80008,elunic Media GmbH,public_relations,operating,18
+2188,c:80118,Comidalia,mobile,operating,37
+2191,c:80356,Ezakus Labs,advertising,operating,57
+2202,c:81326,3D Organisation Ltd,other,operating,18
+2204,c:81336,Ebo Worlwide GmbH,other,operating,62
+2205,c:81346,Pinchro,software,operating,84
+2206,c:81453,Prosonix,biotech,operating,22
+2209,c:81644,Wavecon,consulting,operating,87
+2210,c:81661,Blue Tree Group,consulting,operating,28
+2219,c:82879,KickSport,ecommerce,operating,41
+2222,c:83079,zpeaker.com,advertising,operating,4
+2228,c:83665,Wathory Software,web,operating,17
+2230,c:8373,Qajack,web,operating,92
+2251,c:8699,We're Rolling,other,closed,40
+2257,c:9107,CODA,software,operating,76
+2260,c:9302,Digital Assets Deployment,ecommerce,operating,42

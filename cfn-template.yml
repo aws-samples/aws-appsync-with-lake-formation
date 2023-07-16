@@ -1,0 +1,1233 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: Cfn template for data lake data distribution via appsync graphql api
+Parameters:
+  project:
+    Type: String
+    Default: dl
+    MaxLength: 6
+    Description: Project name
+  awsEnv:
+    Type: String
+    Default: dev
+    MaxLength: 4
+    Description: Environment name
+  vpcCidr:
+    Type: String
+    Default: 10.1.0.0/16
+    Description: An IPv4 CIDR block to associate with the VPC
+  enableDnsSupport:
+    Type: String
+    Default: true
+    AllowedValues: [true, false]
+    Description: Indicates whether the DNS resolution is supported for the VPC
+  enableDnsHostnames:
+    Type: String
+    Default: true
+    AllowedValues: [true, false]
+    Description: Indicates whether the instances launched in the VPC get DNS hostnames
+  publicSubnet1Cidr:
+    Type: String
+    Default: 10.1.10.0/24
+    Description: The IPv4 CIDR block assigned to the public subnet 1
+  publicSubnet2Cidr:
+    Type: String
+    Default: 10.1.20.0/24
+    Description: The IPv4 CIDR block assigned to the public subnet 2
+  privateSubnet1Cidr:
+    Type: String
+    Default: 10.1.50.0/24
+    Description: The IPv4 CIDR block assigned to the private subnet 1
+  privateSubnet2Cidr:
+    Type: String
+    Default: 10.1.60.0/24
+    Description: The IPv4 CIDR block assigned to the private subnet 2
+  cognitoUserPoolUnusedAccountValidityDays:
+    Type: Number
+    Default: 30
+    Description: The user account expiration limit, in days, after which a new account that hasn't signed in is no longer usable
+  cognitoUserPoolDeletionProtection:
+    Type: String
+    Default: INACTIVE
+    AllowedValues: [ACTIVE, INACTIVE]
+    Description: Prevents accidental deletion of the user pool
+  lambdaFunctionTimeout:
+    Type: Number
+    Default: 60
+    Description: The amount of time (in seconds) that Lambda allows a function to run before stopping it
+  executeCrawlerEventBridgeRuleState:
+    Type: String
+    Default: ENABLED
+    AllowedValues: [ENABLED, DISABLED]
+    Description: The state of the rule
+
+Resources:
+  vpc:
+    Type: AWS::EC2::VPC
+    Properties:
+      CidrBlock: !Ref vpcCidr
+      EnableDnsSupport: !Ref enableDnsSupport
+      EnableDnsHostnames: !Ref enableDnsHostnames
+      Tags:
+        - Key: Name
+          Value: !Sub ${project}-${awsEnv}-vpc-${AWS::Region}-${vpcCidr}
+        - Key: project
+          Value: !Ref project
+        - Key: environment
+          Value: !Ref awsEnv
+  internetGateway:
+    Type: AWS::EC2::InternetGateway
+    DependsOn: vpc
+    Properties:
+      Tags:
+        - Key: Name
+          Value: !Sub ${project}-${awsEnv}-internetGateway-${AWS::Region}-${vpcCidr}
+        - Key: project
+          Value: !Ref project
+        - Key: environment
+          Value: !Ref awsEnv
+  internetGatewayAttachment:
+    Type: AWS::EC2::VPCGatewayAttachment
+    Properties:
+      VpcId: !Ref vpc
+      InternetGatewayId: !Ref internetGateway
+  publicSubnet1:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref vpc
+      MapPublicIpOnLaunch: True
+      CidrBlock: !Ref publicSubnet1Cidr
+      AvailabilityZone: !Select [ 0, !GetAZs ]     
+      Tags:
+        - Key: Name
+          Value: !Sub ${project}-${awsEnv}-publicSubnet1-${AWS::Region}-${publicSubnet1Cidr}
+        - Key: project
+          Value: !Ref project
+        - Key: environment
+          Value: !Ref awsEnv
+  publicSubnet2:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref vpc
+      MapPublicIpOnLaunch: True
+      CidrBlock: !Ref publicSubnet2Cidr
+      AvailabilityZone: !Select [ 1, !GetAZs ]
+      Tags:
+        - Key: Name
+          Value: !Sub ${project}-${awsEnv}-publicSubnet2-${AWS::Region}-${publicSubnet2Cidr}
+        - Key: project
+          Value: !Ref project
+        - Key: environment
+          Value: !Ref awsEnv
+  privateSubnet1:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref vpc
+      CidrBlock: !Ref privateSubnet1Cidr
+      AvailabilityZone: !Select [ 0, !GetAZs ]
+      Tags:
+        - Key: Name
+          Value: !Sub ${project}-${awsEnv}-privateSubnet1-${AWS::Region}-${privateSubnet1Cidr}
+        - Key: project
+          Value: !Ref project
+        - Key: environment
+          Value: !Ref awsEnv
+  privateSubnet2:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref vpc
+      CidrBlock: !Ref privateSubnet2Cidr
+      AvailabilityZone: !Select [ 1, !GetAZs ] 
+      Tags:
+        - Key: Name
+          Value: !Sub ${project}-${awsEnv}-privateSubnet2-${AWS::Region}-${privateSubnet2Cidr}
+        - Key: project
+          Value: !Ref project
+        - Key: environment
+          Value: !Ref awsEnv
+  publicRouteTable:
+    Type: AWS::EC2::RouteTable
+    Properties:
+      VpcId: !Ref vpc
+      Tags:
+        - Key: Name
+          Value: !Sub ${project}-${awsEnv}-publicRouteTable-${AWS::Region}-${vpcCidr}
+        - Key: project
+          Value: !Ref project
+        - Key: environment
+          Value: !Ref awsEnv
+  publicRoute:
+    Type: AWS::EC2::Route
+    DependsOn: internetGatewayAttachment
+    Properties:
+      RouteTableId: !Ref publicRouteTable
+      DestinationCidrBlock: 0.0.0.0/0
+      GatewayId: !Ref internetGateway
+  publicSubnet1RouteTableAssociation:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      RouteTableId: !Ref publicRouteTable
+      SubnetId: !Ref publicSubnet1
+  publicSubnet2RouteTableAssociation:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      RouteTableId: !Ref publicRouteTable
+      SubnetId: !Ref publicSubnet2
+  natGatewayEip:
+    Type: AWS::EC2::EIP
+    DependsOn: internetGatewayAttachment
+    Properties:
+      Domain: vpc
+      Tags:
+        - Key: Name
+          Value: !Sub ${project}-${awsEnv}-natGatewayEip-${AWS::Region}-${vpcCidr}
+        - Key: project
+          Value: !Ref project
+        - Key: environment
+          Value: !Ref awsEnv
+  natGateway:
+    Type: AWS::EC2::NatGateway
+    Properties:
+      AllocationId: !GetAtt natGatewayEip.AllocationId
+      SubnetId: !Ref publicSubnet1
+      Tags:
+        - Key: Name
+          Value: !Sub ${project}-${awsEnv}-natGateway-${AWS::Region}
+        - Key: project
+          Value: !Ref project
+        - Key: environment
+          Value: !Ref awsEnv
+  privateRouteTable1:
+    Type: AWS::EC2::RouteTable
+    Properties:
+      VpcId: !Ref vpc
+      Tags:
+        - Key: Name
+          Value: !Sub ${project}-${awsEnv}-privateRouteTable1-${AWS::Region}-${vpcCidr}
+        - Key: project
+          Value: !Ref project
+        - Key: environment
+          Value: !Ref awsEnv
+  privateRoute1:
+    Type: AWS::EC2::Route
+    Properties:
+      RouteTableId: !Ref privateRouteTable1
+      DestinationCidrBlock: 0.0.0.0/0
+      NatGatewayId: !Ref natGateway
+  privateSubnet1RouteTableAssociation:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      RouteTableId: !Ref privateRouteTable1
+      SubnetId: !Ref privateSubnet1
+  privateRouteTable2:
+    Type: AWS::EC2::RouteTable
+    Properties:
+      VpcId: !Ref vpc
+      Tags:
+        - Key: Name
+          Value: !Sub ${project}-${awsEnv}-privateRouteTable2-${AWS::Region}-${vpcCidr}
+        - Key: project
+          Value: !Ref project
+        - Key: environment
+          Value: !Ref awsEnv
+  privateRoute2:
+    Type: AWS::EC2::Route
+    Properties:
+      RouteTableId: !Ref privateRouteTable2
+      DestinationCidrBlock: 0.0.0.0/0
+      NatGatewayId: !Ref natGateway
+  privateSubnet2RouteTableAssociation:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      RouteTableId: !Ref privateRouteTable2
+      SubnetId: !Ref privateSubnet2
+  publicSubnetsNacl:
+    Type: AWS::EC2::NetworkAcl
+    Properties:
+      VpcId: !Ref vpc
+      Tags:
+        - Key: Name
+          Value: !Sub ${project}-${awsEnv}-publicSubnetsNacl-${AWS::Region}-${vpcCidr}
+        - Key: project
+          Value: !Ref project
+        - Key: environment
+          Value: !Ref awsEnv
+  publicSubnetsInboundRule:
+    Type: AWS::EC2::NetworkAclEntry
+    Properties:
+      NetworkAclId: !Ref publicSubnetsNacl
+      RuleNumber: 100
+      Protocol: -1
+      RuleAction: allow
+      CidrBlock: 0.0.0.0/0
+  publicSubnetsOutboundRule:
+    Type: AWS::EC2::NetworkAclEntry
+    Properties:
+      NetworkAclId: !Ref publicSubnetsNacl
+      RuleNumber: 120
+      Protocol: -1
+      Egress: True
+      RuleAction: allow
+      CidrBlock: 0.0.0.0/0
+  publicSubnet1NetworkAclAssociation:
+    Type: AWS::EC2::SubnetNetworkAclAssociation
+    Properties:
+      SubnetId: !Ref publicSubnet1
+      NetworkAclId: !Ref publicSubnetsNacl
+  publicSubnet2NetworkAclAssociation:
+    Type: AWS::EC2::SubnetNetworkAclAssociation
+    Properties:
+      SubnetId: !Ref publicSubnet2
+      NetworkAclId: !Ref publicSubnetsNacl
+  privateSubnetsNacl:
+    Type: AWS::EC2::NetworkAcl
+    Properties:
+      VpcId: !Ref vpc
+      Tags:
+        - Key: Name
+          Value: !Sub ${project}-${awsEnv}-privateSubnetsNacl-${AWS::Region}-${vpcCidr}
+        - Key: project
+          Value: !Ref project
+        - Key: environment
+          Value: !Ref awsEnv
+  privateSubnetsInboundRule:
+    Type: AWS::EC2::NetworkAclEntry 
+    Properties:
+      NetworkAclId: !Ref privateSubnetsNacl
+      RuleNumber: 140
+      Protocol: -1
+      RuleAction: allow
+      CidrBlock: 0.0.0.0/0
+  privateSubnetsOutboundRule:
+    Type: AWS::EC2::NetworkAclEntry
+    Properties:
+      NetworkAclId: !Ref privateSubnetsNacl
+      RuleNumber: 150
+      Protocol: -1
+      Egress: True
+      RuleAction: allow
+      CidrBlock: 0.0.0.0/0  
+  privateSubnet1NetworkAclAssociation:
+    Type: AWS::EC2::SubnetNetworkAclAssociation
+    Properties:
+      SubnetId: !Ref privateSubnet1
+      NetworkAclId: !Ref privateSubnetsNacl
+  privateSubnet2NetworkAclAssociation:
+    Type: AWS::EC2::SubnetNetworkAclAssociation
+    Properties:
+      SubnetId: !Ref privateSubnet2
+      NetworkAclId: !Ref privateSubnetsNacl
+  cognitoUserPool:
+    Type: AWS::Cognito::UserPool
+    Properties:
+      AccountRecoverySetting:
+        RecoveryMechanisms:
+          - Name: verified_email 
+            Priority: 1
+      AdminCreateUserConfig:
+        AllowAdminCreateUserOnly: False
+        InviteMessageTemplate:
+          SMSMessage: "Welcome to my app, {{username}}! Your verification code is {{####}}."
+        UnusedAccountValidityDays: !Ref cognitoUserPoolUnusedAccountValidityDays
+      AliasAttributes:
+        - email
+        - preferred_username
+      AutoVerifiedAttributes:
+        - email
+      DeletionProtection: !Ref cognitoUserPoolDeletionProtection
+      UserPoolName: !Sub ${project}-${awsEnv}-cognitoUserPool-${AWS::Region}
+      UserPoolTags:
+        Name: !Sub ${project}-${awsEnv}-cognitoUserPool-${AWS::Region}
+        project: !Ref project
+        environment: !Ref awsEnv
+  cognitoUserPoolClient:
+    Type: AWS::Cognito::UserPoolClient
+    Properties:
+      ClientName: !Sub ${project}-${awsEnv}-cognitoUserPoolClient-${AWS::Region}
+      GenerateSecret: False
+      ExplicitAuthFlows:
+        - ALLOW_USER_SRP_AUTH
+        - ALLOW_REFRESH_TOKEN_AUTH
+      UserPoolId: !Ref cognitoUserPool
+  developerUserGroupIamRole: 
+    DependsOn: requestHandlerLambdaFunctionRole
+    Type: "AWS::IAM::Role"
+    Properties:
+      RoleName: !Sub ${project}-${awsEnv}-developerUserGroupIamRole-${AWS::Region}
+      AssumeRolePolicyDocument: 
+        Version: "2012-10-17"
+        Statement: 
+          - Effect: "Allow"
+            Principal:
+              AWS: !Sub arn:aws:iam::${AWS::AccountId}:role/${project}-${awsEnv}-requestHandlerLambdaFunctionRole-${AWS::Region}
+              Service: lambda.amazonaws.com
+            Action: 
+              - "sts:AssumeRole"
+      Path: "/"
+  businessAnalystUserGroupIamRole: 
+    DependsOn: requestHandlerLambdaFunctionRole
+    Type: "AWS::IAM::Role"
+    Properties:
+      RoleName: !Sub ${project}-${awsEnv}-businessAnalystUserGroupIamRole-${AWS::Region}
+      AssumeRolePolicyDocument: 
+        Version: "2012-10-17"
+        Statement: 
+          - Effect: "Allow"
+            Principal:
+              AWS: !Sub arn:aws:iam::${AWS::AccountId}:role/${project}-${awsEnv}-requestHandlerLambdaFunctionRole-${AWS::Region}
+              Service: lambda.amazonaws.com
+            Action: 
+              - "sts:AssumeRole"
+      Path: "/"
+  cognitoUserGroupsIamPolicy:
+    DependsOn: [developerUserGroupIamRole, businessAnalystUserGroupIamRole]
+    Type: 'AWS::IAM::Policy'
+    Properties:
+      PolicyName: !Sub ${project}-${awsEnv}-cognitoUserGroupsIamPolicy-${AWS::Region}
+      PolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+        - Effect: Allow
+          Action:
+            - lakeformation:GetDataAccess
+          Resource: "*"
+        - Effect: Allow
+          Action:
+            - glue:GetPartitions
+            - glue:GetTable
+            - glue:GetDatabase
+            - athena:StartQueryExecution
+            - athena:GetQueryResults
+            - athena:GetQueryExecution
+            - s3:PutObject
+            - s3:GetObject
+            - s3:GetBucketLocation
+          Resource:
+            - !Sub arn:aws:glue:${AWS::Region}:${AWS::AccountId}:table/${glueDatabase}/${ownersTable}
+            - !Sub arn:aws:glue:${AWS::Region}:${AWS::AccountId}:table/${glueDatabase}/${companiesTable}
+            - !Sub arn:aws:glue:${AWS::Region}:${AWS::AccountId}:database/${glueDatabase}
+            - !Sub arn:aws:athena:${AWS::Region}:${AWS::AccountId}:workgroup/primary
+            - !Sub arn:aws:s3:::${datalakeS3Bucket}/*
+            - !Sub arn:aws:s3:::${datalakeS3Bucket}
+            - !Sub arn:aws:glue:${AWS::Region}:${AWS::AccountId}:catalog
+      Roles:
+        - !Ref developerUserGroupIamRole
+        - !Ref businessAnalystUserGroupIamRole
+  developerUserGroup:
+    DependsOn: [developerUserGroupIamRole, cognitoUserPool]
+    Type: AWS::Cognito::UserPoolGroup
+    Properties:
+      Description: Cognito userpool group for developers
+      GroupName: !Sub ${project}-${awsEnv}-developerUserGroup-${AWS::Region}
+      UserPoolId: !Ref cognitoUserPool
+      RoleArn: !GetAtt developerUserGroupIamRole.Arn
+  businessAnalystUserGroup:
+    DependsOn: [businessAnalystUserGroupIamRole, cognitoUserPool]
+    Type: AWS::Cognito::UserPoolGroup
+    Properties:
+      Description: Cognito userpool group for business analyst
+      GroupName: !Sub ${project}-${awsEnv}-businessAnalystUserGroup-${AWS::Region}
+      UserPoolId: !Ref cognitoUserPool
+      RoleArn: !GetAtt businessAnalystUserGroupIamRole.Arn
+  requestHandlerLambdaSecurityGroup:
+    DependsOn: vpc
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      VpcId:  !Ref vpc
+      GroupDescription: A security group for request handler lambda function
+      Tags:
+        - Key: Name
+          Value: !Sub ${project}-${awsEnv}-requestHandlerLambdaSecurityGroup-${AWS::Region}
+        - Key: project
+          Value: !Ref project
+        - Key: environment
+          Value: !Ref awsEnv
+  requestHandlerLambdaSecurityGroupInboundRule:
+    Type: AWS::EC2::SecurityGroupIngress
+    DependsOn: requestHandlerLambdaSecurityGroup
+    Properties:
+      GroupId: !Ref requestHandlerLambdaSecurityGroup
+      IpProtocol: tcp
+      FromPort: 0
+      ToPort: 65535
+      SourceSecurityGroupId: !Ref requestHandlerLambdaSecurityGroup
+  requestHandlerLambdaSecurityGroupOutboundRule:
+    Type: AWS::EC2::SecurityGroupEgress
+    Properties:
+      IpProtocol: -1
+      CidrIp: 0.0.0.0/0
+      GroupId: !Ref requestHandlerLambdaSecurityGroup
+  requestHandlerLambdaFunctionRole:
+    DependsOn: cognitoUserPool
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: !Sub ${project}-${awsEnv}-requestHandlerLambdaFunctionRole-${AWS::Region}
+      AssumeRolePolicyDocument: 
+        Version: 2012-10-17
+        Statement:
+          - Sid: requestHandlerLambdaFunction
+            Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+            Action: 'sts:AssumeRole'
+      ManagedPolicyArns:
+        - 'arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole'
+      Path: "/"
+      Policies:
+        - PolicyName: !Sub ${project}-${awsEnv}-requestHandlerLambdaFunctionPolicy-${AWS::Region}
+          PolicyDocument: 
+            Version: '2012-10-17'
+            Statement:
+            - Effect: Allow
+              Action:
+                - ec2:DescribeNetworkInterfaces
+              Resource: "*"
+            - Effect: Allow
+              Action:
+                - cognito-idp:GetGroup
+                - ec2:CreateNetworkInterface
+                - ec2:CreateTags
+                - ec2:DeleteNetworkInterface
+                - s3:GetObject
+              Resource:
+                - !Sub arn:aws:s3:::${datalakeS3Bucket}/*
+                - !Sub arn:aws:s3:::${datalakeS3Bucket}
+                - !Sub arn:aws:ec2:${AWS::Region}:${AWS::AccountId}:*/*
+                - !GetAtt cognitoUserPool.Arn
+  lambdaStsAssumePolicy:
+    DependsOn: [developerUserGroupIamRole, businessAnalystUserGroupIamRole]
+    Type: 'AWS::IAM::Policy'
+    Properties:
+      PolicyName: !Sub ${project}-${awsEnv}-lambdaStsAssumePolicy-${AWS::Region}
+      PolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+        - Effect: Allow
+          Action: sts:AssumeRole
+          Resource: 
+            - !GetAtt developerUserGroupIamRole.Arn
+            - !GetAtt businessAnalystUserGroupIamRole.Arn
+      Roles:
+        - !Ref requestHandlerLambdaFunctionRole
+  requestHandlerLambdaFunction:
+    DependsOn: requestHandlerLambdaFunctionRole
+    Type: AWS::Lambda::Function
+    Properties:
+      Runtime: python3.7
+      Role: !GetAtt requestHandlerLambdaFunctionRole.Arn
+      FunctionName: !Sub ${project}-${awsEnv}-requestHandlerLambdaFunction-${AWS::Region}
+      Timeout: !Ref lambdaFunctionTimeout
+      Handler: index.lambda_handler
+      Code:
+        ZipFile: |
+          def lambda_handler():
+            print("Hello World!")
+            return None
+      Environment:
+        Variables:
+          ATHENA_OUTPUT_LOCATION: !Sub s3://${datalakeS3Bucket}/athena_results
+          COGNITO_USER_POOL_ID: !Ref cognitoUserPool
+          GLUE_DATABASE: !Ref glueDatabase
+          GLUE_COMPANIES_TABLE: !Ref companiesTable
+          GLUE_OWNERS_TABLE: !Ref ownersTable
+      VpcConfig:
+        SecurityGroupIds:
+          - !Ref requestHandlerLambdaSecurityGroup
+        SubnetIds:
+          - !Ref privateSubnet1
+          - !Ref privateSubnet2
+  crawlerLambdaSecurityGroup:
+    DependsOn: vpc
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      VpcId:  !Ref vpc
+      GroupDescription: A security group for crawler lambda function
+      Tags:
+        - Key: Name
+          Value: !Sub ${project}-${awsEnv}-crawlerLambdaSecurityGroup-${AWS::Region}
+        - Key: project
+          Value: !Ref project
+        - Key: environment
+          Value: !Ref awsEnv
+  crawlerLambdaSecurityGroupSelfInboundRule:
+    Type: AWS::EC2::SecurityGroupIngress
+    DependsOn: crawlerLambdaSecurityGroup
+    Properties:
+      GroupId: !Ref crawlerLambdaSecurityGroup
+      IpProtocol: tcp
+      FromPort: 0
+      ToPort: 65535
+      SourceSecurityGroupId: !Ref crawlerLambdaSecurityGroup
+  crawlerLambdaSecurityGroupOutboundRule:
+    Type: AWS::EC2::SecurityGroupEgress
+    Properties:
+      IpProtocol: -1
+      CidrIp: 0.0.0.0/0
+      GroupId: !Ref crawlerLambdaSecurityGroup
+  crawlerLambdaFunctionRole:
+    DependsOn: cognitoUserPool
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: !Sub ${project}-${awsEnv}-crawlerLambdaFunctionRole-${AWS::Region}
+      AssumeRolePolicyDocument: 
+        Version: 2012-10-17
+        Statement:
+          - Sid: crawlerLambdaFunction
+            Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+            Action: 'sts:AssumeRole'
+      ManagedPolicyArns:
+        - 'arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole'
+      Path: "/"
+      Policies:
+        - PolicyName: !Sub ${project}-${awsEnv}-crawlerLambdaFunctionIamPolicy-${AWS::Region}
+          PolicyDocument: 
+            Version: '2012-10-17'
+            Statement:
+            - Effect: Allow
+              Action:
+                - ec2:DescribeNetworkInterfaces
+              Resource: "*"
+            - Effect: Allow
+              Action:
+                - s3:GetObject
+                - s3:PutObject
+                - s3:DeleteObject
+                - glue:StartCrawler
+                - ec2:CreateNetworkInterface
+                - ec2:CreateTags
+                - ec2:DeleteNetworkInterface
+                - logs:CreateLogStream
+                - logs:PutLogEvents
+                - logs:CreateLogGroup
+              Resource:
+                - !Sub arn:aws:glue:${AWS::Region}:${AWS::AccountId}:crawler/${glueCrawler}
+                - !Sub arn:aws:logs:${AWS::Region}:${AWS::AccountId}:*
+                - !Sub arn:aws:logs:${AWS::Region}:${AWS::AccountId}:log-group:*
+                - !Sub arn:aws:s3:::${datalakeS3Bucket}/*
+                - !Sub arn:aws:ec2:${AWS::Region}:${AWS::AccountId}:*/*
+  crawlerLambdaFunction:
+    DependsOn: crawlerLambdaFunctionRole
+    Type: AWS::Lambda::Function
+    Properties:
+      Runtime: python3.7
+      Role: !GetAtt crawlerLambdaFunctionRole.Arn
+      FunctionName: !Sub ${project}-${awsEnv}-crawlerLambdaFunction-${AWS::Region}
+      Timeout: !Ref lambdaFunctionTimeout
+      Code:
+        ZipFile: |
+          def lambda_handler():
+            print("Hello World!")
+            return None
+      Handler: index.lambda_handler
+      Environment:
+        Variables:
+          CRAWLER_NAME: !Ref glueCrawler
+      VpcConfig:
+        SecurityGroupIds:
+          - !Ref crawlerLambdaSecurityGroup
+        SubnetIds:
+          - !Ref privateSubnet1
+          - !Ref privateSubnet2
+  datalakeS3Bucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      NotificationConfiguration:
+        EventBridgeConfiguration:
+          EventBridgeEnabled: true
+      BucketName: !Sub ${project}-${awsEnv}-datalake-${AWS::Region}-${AWS::AccountId}
+  executeCrawlerEventBridgeRule:
+    Type: AWS::Events::Rule
+    Properties:
+      EventBusName: default
+      EventPattern:
+        source:
+          - aws.s3
+        detail-type:
+          - Object Created
+        detail:
+          bucket:
+            name:
+              - !Ref datalakeS3Bucket
+      Name: !Sub ${project}-${awsEnv}-executeCrawlerEventBridgeRule-${AWS::Region}
+      State: !Ref executeCrawlerEventBridgeRuleState
+      Targets:
+        - Id: executeCrawlerEventBridgeRule
+          Arn: !GetAtt crawlerLambdaFunction.Arn
+  invokeCrawlerLambdaPermission: 
+    Type: AWS::Lambda::Permission
+    Properties: 
+      FunctionName: !Ref crawlerLambdaFunction
+      Action: "lambda:InvokeFunction"
+      Principal: "events.amazonaws.com"
+      SourceArn: !GetAtt executeCrawlerEventBridgeRule.Arn
+  lakeformationIamRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: !Sub ${project}-${awsEnv}-lakeformationIamRole-${AWS::Region}
+      AssumeRolePolicyDocument: 
+        Version: 2012-10-17
+        Statement:
+          - Sid: lakeformationAccess
+            Effect: Allow
+            Principal:
+              Service: lakeformation.amazonaws.com
+            Action: 'sts:AssumeRole'
+      Path: "/"
+      ManagedPolicyArns:
+        - 'arn:aws:iam::aws:policy/service-role/AWSGlueServiceRole'
+      Policies:
+        - PolicyName: !Sub ${project}-${awsEnv}-lakeformationIamPolicy-${AWS::Region}
+          PolicyDocument: 
+            Version: '2012-10-17'
+            Statement:
+            - Effect: Allow
+              Action:
+                - lakeformation:BatchRevokePermissions
+                - lakeformation:RevokePermissions
+                - lakeformation:BatchGrantPermissions
+                - lakeformation:ListPermissions
+                - lakeformation:GrantPermissions
+                - lakeformation:GetDataAccess
+              Resource: "*"
+            - Effect: Allow
+              Action:
+                - glue:SearchTables
+                - glue:GetDatabase
+                - glue:GetTables
+                - s3:PutObject
+                - s3:GetObject
+                - s3:DeleteObject
+                - s3:GetBucketAcl
+                - s3:ListBucket
+                - s3:GetBucketLocation
+              Resource:
+                - !Sub arn:aws:glue:${AWS::Region}:${AWS::AccountId}:table/${glueDatabase}/${ownersTable}
+                - !Sub arn:aws:glue:${AWS::Region}:${AWS::AccountId}:table/${glueDatabase}/${companiesTable}
+                - !Sub arn:aws:glue:${AWS::Region}:${AWS::AccountId}:database/${glueDatabase}
+                - !Sub arn:aws:s3:::${datalakeS3Bucket}/*
+                - !Sub arn:aws:s3:::${datalakeS3Bucket}
+  lakeFormation:
+    Type: AWS::LakeFormation::Resource
+    Properties:
+      ResourceArn: !GetAtt datalakeS3Bucket.Arn
+      UseServiceLinkedRole: True
+      RoleArn: !GetAtt lakeformationIamRole.Arn
+
+  glueDatabase:
+    Type: AWS::Glue::Database
+    Properties: 
+      CatalogId: !Ref AWS::AccountId
+      DatabaseInput:
+        LocationUri: !Sub s3://${datalakeS3Bucket}
+        Name: !Sub ${project}-${awsEnv}-gluedatabase-${AWS::Region}
+  databaseGrantForCrawlerRole:
+    Type: AWS::LakeFormation::Permissions
+    Properties:
+      Permissions:
+        - ALL
+        - DESCRIBE
+        - ALTER 
+        - CREATE_TABLE 
+        - DROP 
+      DataLakePrincipal:
+        DataLakePrincipalIdentifier: !GetAtt glueCrawlerIamRole.Arn
+      Resource:
+        DatabaseResource:
+          Name: !Ref glueDatabase 
+  companiesTableGrantForCrawlerRole:
+    Type: AWS::LakeFormation::Permissions
+    Properties:
+      Permissions:
+        - ALL
+        - DESCRIBE
+        - ALTER 
+        - DROP 
+        - SELECT
+      DataLakePrincipal:
+        DataLakePrincipalIdentifier: !GetAtt glueCrawlerIamRole.Arn
+      Resource:
+        TableResource:
+          DatabaseName: !Ref glueDatabase
+          Name: !Ref companiesTable
+  ownersTableGrantForCrawlerRole:
+    Type: AWS::LakeFormation::Permissions
+    Properties:
+      Permissions:
+        - ALL
+        - DESCRIBE
+        - ALTER 
+        - DROP 
+        - SELECT
+      DataLakePrincipal:
+        DataLakePrincipalIdentifier: !GetAtt glueCrawlerIamRole.Arn
+      Resource:
+        TableResource:
+          DatabaseName: !Ref glueDatabase
+          Name: !Ref ownersTable  
+  glueCrawlerIamRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: !Sub ${project}-${awsEnv}-glueCrawlerIamRole-${AWS::Region}
+      AssumeRolePolicyDocument: 
+        Version: 2012-10-17
+        Statement:
+          - Sid: lakeformationAccess
+            Effect: Allow
+            Principal:
+              Service: glue.amazonaws.com
+            Action: 'sts:AssumeRole'
+      Path: "/"
+      ManagedPolicyArns:
+        - 'arn:aws:iam::aws:policy/service-role/AWSGlueServiceRole'
+      Policies:
+        - PolicyName: !Sub ${project}-${awsEnv}-glueCrawlerIamPolicy-${AWS::Region}
+          PolicyDocument: 
+            Version: '2012-10-17'
+            Statement:
+            - Effect: Allow
+              Action:
+                - s3:PutObject
+                - s3:GetObject
+                - s3:DeleteObject
+              Resource:
+                - !Sub arn:aws:s3:::${datalakeS3Bucket}/*
+                - !Sub arn:aws:s3:::${datalakeS3Bucket}
+  glueCrawler:
+    Type: AWS::Glue::Crawler
+    Properties:
+      DatabaseName: !Ref glueDatabase
+      Name: !Sub ${project}-${awsEnv}-glueCrawler-${AWS::Region}
+      Role: !GetAtt glueCrawlerIamRole.Arn
+      SchemaChangePolicy:
+        DeleteBehavior: LOG
+        UpdateBehavior: UPDATE_IN_DATABASE
+      TablePrefix: !Sub ${project}-${awsEnv}-
+      Targets:
+        CatalogTargets:
+          - DatabaseName: !Ref glueDatabase
+            Tables: 
+              - !Ref companiesTable
+              - !Ref ownersTable
+  companiesTable:
+    Type: AWS::Glue::Table
+    Properties: 
+      CatalogId: !Ref AWS::AccountId
+      DatabaseName: !Ref glueDatabase
+      TableInput:
+        Parameters:
+          "classification": "csv"
+        Name: !Sub ${project}-${awsEnv}-companies
+        PartitionKeys:
+          - Name: continent
+            Type: string
+        TableType: EXTERNAL_TABLE
+        StorageDescriptor:
+          InputFormat: org.apache.hadoop.mapred.TextInputFormat
+          OutputFormat: org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+          SerdeInfo:
+            Name: companiesTableSerde
+            Parameters:
+              "field.delim": ","
+            SerializationLibrary: org.apache.hadoop.hive.serde2.OpenCSVSerde
+          Location: !Sub s3://${datalakeS3Bucket}/companies/
+          Columns:
+            - Name: index
+              Type: bigint
+            - Name: company_id
+              Type: string
+            - Name: company_name
+              Type: string
+            - Name: category_code
+              Type: string
+            - Name: status
+              Type: string
+            - Name: owner_id
+              Type: bigint
+  companiesTableGrantForDeveloperRole:
+    Type: AWS::LakeFormation::Permissions
+    Properties:
+      Permissions:
+        - SELECT
+      DataLakePrincipal:
+        DataLakePrincipalIdentifier: !GetAtt developerUserGroupIamRole.Arn
+      Resource:
+        TableResource:
+          DatabaseName: !Ref glueDatabase
+          Name: !Ref companiesTable
+  companiesTableGrantForbusinessAnalystRole:
+    Type: AWS::LakeFormation::Permissions
+    Properties:
+      Permissions:
+        - SELECT
+      DataLakePrincipal:
+        DataLakePrincipalIdentifier: !GetAtt businessAnalystUserGroupIamRole.Arn
+      Resource:
+        TableResource:
+          DatabaseName: !Ref glueDatabase
+          Name: !Ref companiesTable
+  ownersTable:
+    Type: AWS::Glue::Table
+    Properties: 
+      CatalogId: !Ref AWS::AccountId
+      DatabaseName: !Ref glueDatabase
+      TableInput:
+        Parameters:
+          "classification": "csv"
+        Name: !Sub ${project}-${awsEnv}-owners
+        PartitionKeys: []
+        TableType: EXTERNAL_TABLE
+        StorageDescriptor:
+          InputFormat: org.apache.hadoop.mapred.TextInputFormat
+          OutputFormat: org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+          SerdeInfo:
+            Name: ownersTableSerde
+            Parameters:
+              "field.delim": ","
+            SerializationLibrary: org.apache.hadoop.hive.serde2.OpenCSVSerde
+          Location: !Sub s3://${datalakeS3Bucket}/owners/
+          Columns:
+            - Name: people_id
+              Type: bigint
+            - Name: first_name
+              Type: string
+            - Name: last_name
+              Type: string
+            - Name: gender
+              Type: string
+            - Name: age
+              Type: bigint
+            - Name: designation
+              Type: string
+            - Name: address
+              Type: string
+  ownersTableGrantForDeveloperRole:
+    Type: AWS::LakeFormation::Permissions
+    Properties:
+      DataLakePrincipal:
+        DataLakePrincipalIdentifier: !GetAtt developerUserGroupIamRole.Arn
+      Resource:
+        TableResource:
+          DatabaseName: !Ref glueDatabase
+          Name: !Ref ownersTable
+      Permissions:
+        - SELECT
+  ownersTableGrantForBusinessAnalystRole:
+    Type: AWS::LakeFormation::Permissions
+    Properties:
+      DataLakePrincipal:
+        DataLakePrincipalIdentifier: !GetAtt businessAnalystUserGroupIamRole.Arn
+      Resource:
+        TableWithColumnsResource:
+          DatabaseName: !Ref glueDatabase
+          Name: !Ref ownersTable
+          ColumnNames:
+            - age
+            - designation
+            - gender
+            - people_id
+      Permissions:
+        - "SELECT"
+  appSyncApi:
+    Type: "AWS::AppSync::GraphQLApi"
+    Properties:
+      Name: !Sub ${project}-${awsEnv}-appSyncApi-${AWS::Region}
+      AuthenticationType: AMAZON_COGNITO_USER_POOLS
+      UserPoolConfig:
+        AwsRegion: !Sub ${AWS::Region}
+        DefaultAction: ALLOW
+        UserPoolId: !Ref cognitoUserPool
+  appSyncApiSchema:
+    Type: "AWS::AppSync::GraphQLSchema"
+    DependsOn: appSyncApi
+    Properties:
+      ApiId: !GetAtt appSyncApi.ApiId
+      Definition: |
+        schema {
+            query: Query
+          }
+
+          type Companies {
+            first_name: String
+            last_name: String
+            gender: String
+            age: Int
+            designation: String
+            address: String
+            index: Int
+            company_id: String
+            company_name: String
+            category_code: String
+            status: String
+            owner_id: Int
+            continent: String
+          }
+
+          type Query {
+            getAll: [Companies]
+          }
+  appsyncApiDataSourceAccessRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: !Sub ${project}-${awsEnv}-appsyncApiDataSourceAccessRole-${AWS::Region}
+      AssumeRolePolicyDocument: 
+        Version: 2012-10-17
+        Statement:
+          - Sid: appsyncApiDataSourceAccess
+            Effect: Allow
+            Principal:
+              Service: appsync.amazonaws.com
+            Action: 'sts:AssumeRole'
+      Path: "/"
+      Policies:
+        - PolicyName: !Sub ${project}-${awsEnv}-appsyncApiDataSourceAccessIamPolicy-${AWS::Region}
+          PolicyDocument: 
+            Version: '2012-10-17'
+            Statement:
+            - Effect: Allow
+              Action:
+                - lambda:InvokeFunction
+              Resource: "*"
+  appSyncApiDataSource:
+    Type: "AWS::AppSync::DataSource"
+    DependsOn: appSyncApi
+    Properties:
+      ServiceRoleArn: !GetAtt appsyncApiDataSourceAccessRole.Arn
+      ApiId: !GetAtt appSyncApi.ApiId
+      Name: lambdaDataSource
+      Type: AWS_LAMBDA
+      LambdaConfig:
+        LambdaFunctionArn: !GetAtt requestHandlerLambdaFunction.Arn
+  appSyncApiKey:
+    Type: "AWS::AppSync::ApiKey"
+    DependsOn: appSyncApi
+    Properties:
+      ApiId: !GetAtt appSyncApi.ApiId
+  appSyncApiQueryResolver:
+    Type: "AWS::AppSync::Resolver"
+    DependsOn: [appSyncApiSchema, appSyncApiDataSource]
+    Properties:
+      ApiId: !GetAtt appSyncApi.ApiId
+      TypeName: Query
+      FieldName: getAll
+      Kind: PIPELINE
+      PipelineConfig:
+        Functions:
+          - !GetAtt appSyncApiResolverFunction.FunctionId
+
+      RequestMappingTemplate: |
+        {
+          "version": "2017-02-28",
+          "payload": {
+              "name": "$context.arguments.name",
+              "data": $util.toJson($context.arguments.data)
+          }
+        }
+      ResponseMappingTemplate: |
+        $util.toJson($context.result)
+  appSyncApiResolverFunction:
+    Type: AWS::AppSync::FunctionConfiguration
+    Properties:
+      ApiId: !GetAtt appSyncApi.ApiId
+      Name: !Sub ${project}${awsEnv}appSyncApiResolverFunction
+      DataSourceName: !GetAtt appSyncApiDataSource.Name
+      FunctionVersion: 2018-05-29
+      Runtime:
+        Name: APPSYNC_JS
+        RuntimeVersion: 1.0.0
+      Code: |
+        import { util } from '@aws-appsync/utils';
+
+        export function request(ctx) {
+          const {source, args} = ctx
+          return {
+            operation: 'Invoke',
+            payload: { ctx },
+          };
+        }
+
+        export function response(ctx) {
+            return ctx.result;
+        }
+
+Outputs:
+  vpcId:
+    Description: Vpc
+    Value: !Ref vpc
+    Export:
+      Name: !Sub ${project}-${awsEnv}-vpcId-${AWS::Region}
+  publicSubnet1:
+    Description: Public subnet 1
+    Value: !Ref publicSubnet1
+    Export:
+      Name: !Sub ${project}-${awsEnv}-publicSubnet1-${AWS::Region}
+  publicSubnet2:
+    Description: Public subnet 2
+    Value: !Ref publicSubnet2
+    Export:
+      Name: !Sub ${project}-${awsEnv}-publicSubnet2-${AWS::Region}
+  privateSubnet1:
+    Description: Private subnet 1
+    Value: !Ref privateSubnet1
+    Export:
+      Name: !Sub ${project}-${awsEnv}-privateSubnet1-${AWS::Region}
+  privateSubnet2:
+    Description: Private subnet 2
+    Value: !Ref privateSubnet2
+    Export:
+      Name: !Sub ${project}-${awsEnv}-privateSubnet2-${AWS::Region}
+  publicRouteTable:
+    Description: Public route table
+    Value: !Ref publicRouteTable
+    Export:
+      Name: !Sub ${project}-${awsEnv}-publicRouteTable-${AWS::Region}
+  privateRouteTable1:
+    Description: Private route table 1
+    Value: !Ref privateRouteTable1
+    Export:
+      Name: !Sub ${project}-${awsEnv}-privateRouteTable1-${AWS::Region}
+  privateRouteTable2:
+    Description: Private route table 2
+    Value: !Ref privateRouteTable2
+    Export:
+      Name: !Sub ${project}-${awsEnv}-privateRouteTable2-${AWS::Region}
+  publicSubnetsNacl:
+    Description: Public subnets Nacl
+    Value: !Ref publicSubnetsNacl
+    Export:
+      Name: !Sub ${project}-${awsEnv}-publicSubnetsNacl-${AWS::Region}
+  privateSubnetsNacl:
+    Description: Private subnets Nacl
+    Value: !Ref privateSubnetsNacl
+    Export:
+      Name: !Sub ${project}-${awsEnv}-privateSubnetsNacl-${AWS::Region}
+  cognitoUserPoolId:
+    Description: Cognito userpool ID
+    Value: !Ref cognitoUserPool
+    Export:
+      Name: !Sub ${project}-${awsEnv}-cognitoUserPool-${AWS::Region}
+  cognitoUserPoolArn:
+    Description: The Amazon Resource Name (ARN) of the user pool
+    Value: !GetAtt cognitoUserPool.Arn
+    Export:
+      Name: !Sub ${project}-${awsEnv}-cognitoUserPoolArn-${AWS::Region}
+  cognitoUserPoolProviderURL:
+    Description: The URL of the provider of the Amazon Cognito user pool
+    Value: !GetAtt cognitoUserPool.ProviderURL
+    Export:
+      Name: !Sub ${project}-${awsEnv}-cognitoUserPoolProviderURL-${AWS::Region}
+  cognitoUserPoolProviderName:
+    Description: The provider name of the Amazon Cognito user pool
+    Value: !GetAtt cognitoUserPool.ProviderName
+    Export:
+      Name: !Sub ${project}-${awsEnv}-cognitoUserPoolProviderName-${AWS::Region}
+  cognitoUserPoolClientId:
+    Description: The Id of the Amazon Cognito user pool client
+    Value: !Ref cognitoUserPoolClient
+    Export:
+      Name: !Sub ${project}-${awsEnv}-cognitoUserPoolClientId-${AWS::Region}
+  developerUserGroupName:
+    Description: Cognito userpool developer group name
+    Value: !Ref developerUserGroup
+    Export:
+      Name: !Sub ${project}-${awsEnv}-developerUserGroup-${AWS::Region}
+  businessAnalystUserGroupName:
+    Description: Cognito userpool buisness analyst group name
+    Value: !Ref businessAnalystUserGroup
+    Export:
+      Name: !Sub ${project}-${awsEnv}-businessAnalystUserGroup-${AWS::Region}
+  requestHandlerLambdaSecurityGroupId:
+    Description: Request handler lambda securitygroup Id
+    Value: !Ref requestHandlerLambdaSecurityGroup
+    Export:
+      Name: !Sub ${project}-${awsEnv}-requestHandlerLambdaSecurityGroupId-${AWS::Region}
+  requestHandlerLambdaFunctionRoleId:
+    Description: Request handler lambda function IAM role Id
+    Value: !GetAtt requestHandlerLambdaFunctionRole.RoleId
+    Export:
+      Name: !Sub ${project}-${awsEnv}-requestHandlerLambdaFunctionRoleId-${AWS::Region}
+  requestHandlerLambdaFunctionName:
+    Description: Request handler lambda function name
+    Value: !Ref requestHandlerLambdaFunction
+    Export:
+      Name: !Sub ${project}-${awsEnv}-requestHandlerLambdaFunctionName-${AWS::Region}
+  crawlerLambdaSecurityGroupId:
+    Description: Crawler lambda securitygroup Id
+    Value: !Ref crawlerLambdaSecurityGroup
+    Export:
+      Name: !Sub ${project}-${awsEnv}-crawlerLambdaSecurityGroupId-${AWS::Region}
+  crawlerLambdaFunctionRoleId:
+    Description: Crawler lambda function IAM role Id
+    Value: !GetAtt crawlerLambdaFunctionRole.RoleId
+    Export:
+      Name: !Sub ${project}-${awsEnv}-crawlerLambdaFunctionRoleId-${AWS::Region}
+  crawlerLambdaFunctionName:
+    Description: Crawler lambda function name
+    Value: !Ref crawlerLambdaFunction
+    Export:
+      Name: !Sub ${project}-${awsEnv}-crawlerLambdaFunctionName-${AWS::Region}
+  datalakeS3BucketName:
+    Description: Datalake S3 bucket name
+    Value: !Ref datalakeS3Bucket
+    Export:
+      Name: !Sub ${project}-${awsEnv}-datalakeS3BucketName-${AWS::Region}
+  executeCrawlerEventBridgeRuleId:
+    Description: Eventbridge rule Id to execute crawler 
+    Value: !Ref executeCrawlerEventBridgeRule
+    Export:
+      Name: !Sub ${project}-${awsEnv}-executeCrawlerEventBridgeRuleId-${AWS::Region}
+  lakeformationIamRoleId:
+    Description: Lakeformation IAM role Id
+    Value: !GetAtt lakeformationIamRole.RoleId
+    Export:
+      Name: !Sub ${project}-${awsEnv}-lakeformationIamRoleId-${AWS::Region}
+  glueDatabaseName:
+    Description: Glue database name
+    Value: !Ref glueDatabase
+    Export:
+      Name: !Sub ${project}-${awsEnv}-glueDatabaseName-${AWS::Region}
+  glueCrawlerName:
+    Description: Glue crawler name
+    Value: !Ref glueCrawler
+    Export:
+      Name: !Sub ${project}-${awsEnv}-glueCrawlerName-${AWS::Region}
+  companiesTableName:
+    Description: Companies table name
+    Value: !Ref companiesTable
+    Export:
+      Name: !Sub ${project}-${awsEnv}-companiesTableName-${AWS::Region}
+  ownersTableName:
+    Description: Owners table name
+    Value: !Ref ownersTable
+    Export:
+      Name: !Sub ${project}-${awsEnv}-ownersTableName-${AWS::Region}
+  appSyncApi:
+    Description: Appsync api
+    Value: !Ref appSyncApi
+    Export:
+      Name: !Sub ${project}-${awsEnv}-appSyncApi-${AWS::Region}
+  appSyncApiSchema:
+    Description: Appsync api schema Id
+    Value: !Ref appSyncApiSchema
+    Export:
+      Name: !Sub ${project}-${awsEnv}-appSyncApiSchema-${AWS::Region}
+  appSyncApiDataSource:
+    Description: Appsync api datasource Id
+    Value: !Ref appSyncApiDataSource
+    Export:
+      Name: !Sub ${project}-${awsEnv}-appSyncApiDataSource-${AWS::Region}
+  appsyncApiId:
+    Description: Appsync api Id
+    Value: !GetAtt appSyncApi.ApiId
+    Export:
+      Name: !Sub ${project}-${awsEnv}-appsyncApiId-${AWS::Region}
+  appsyncApiEndpoint:
+    Description: The URL of the appsync endpoint
+    Value: !GetAtt appSyncApi.GraphQLUrl
+    Export:
+      Name: !Sub ${project}-${awsEnv}-appsyncApiEndpoint-${AWS::Region}
+  appSyncApiResolverFunction:
+    Description: Resolver function Arn
+    Value: !Ref appSyncApiResolverFunction
+    Export:
+      Name: !Sub ${project}-${awsEnv}-appSyncApiResolverFunctionName-${AWS::Region}

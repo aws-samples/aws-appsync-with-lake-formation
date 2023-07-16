@@ -1,0 +1,147 @@
+Index,company_id,company_name,category_code,status,owner_id
+0,c:18055,VisualPin,web,closed,64
+7,c:18125,Reliance Communications,web,operating,74
+13,c:18247,Nbcindia.com,web,operating,13
+31,c:184236,Chipak.com,ecommerce,operating,22
+46,c:185936,Super Blinds Mart,web,operating,52
+58,c:187327,LocalStore,web,operating,85
+62,c:187808,Sentia Australia,software,operating,59
+65,c:188142,Social Media Cheat Sheets,advertising,operating,90
+72,c:188755,Aspricot Technologies,other,operating,36
+74,c:189641,OZhut,ecommerce,operating,20
+81,c:190606,Dot Creatives Digital Agency,advertising,operating,51
+96,c:192153,Dynamis Solutions,web,operating,37
+99,c:192523,Alfa weighing scale,ecommerce,operating,21
+101,c:19267,Four Fractions,ecommerce,operating,89
+102,c:19268,NextBit Computing,hardware,operating,70
+105,c:192877,MarketWebDesigner,software,operating,45
+109,c:193612,SavanGadi,public_relations,operating,18
+119,c:194461,Sme Sauda,ecommerce,operating,52
+121,c:194810,Progressive Industries,other,operating,14
+146,c:198435,Netagi pty,software,operating,55
+161,c:201489,Random Logics Technologies,software,operating,25
+182,c:209934,Jack On Block,other,operating,42
+193,c:211990,Caladium Systems,ecommerce,operating,80
+197,c:212314,Find Me Similar,games_video,operating,69
+202,c:213289,SoapBox365,software,operating,46
+209,c:2144,Mobiance,web,operating,57
+237,c:217902,Invictus Oncology,biotech,operating,51
+246,c:218685,Bedbathmore.com,ecommerce,operating,27
+261,c:221457,Planet4shoes,ecommerce,operating,33
+276,c:224112,shopdew.com,ecommerce,operating,2
+282,c:224964,SunTec Business Solutions,software,operating,80
+289,c:225827,Eronka,software,operating,72
+292,c:226893,Kreative Carafe,web,operating,39
+297,c:228064,Snowman,other,operating,54
+304,c:229411,SINGHAL INFOSYSTEMS PRIVATE LIMITED,hardware,operating,46
+307,c:230464,DataInfovision Pvt. Ltd.,software,operating,34
+308,c:230643,Yatango Mobile,software,operating,29
+327,c:233231,astro99,other,operating,54
+339,c:234891,Local Measure,web,operating,35
+350,c:236024,Tekno Logix Consulting Services,consulting,operating,70
+418,c:12361,Blaze Dream Technologies Private Limited,web,operating,18
+437,c:13439,Quic Solv,software,operating,2
+440,c:135809,INVNTN,mobile,operating,64
+453,c:139241,Interactive Media Pvt Ltd.,web,operating,42
+477,c:142214,Urban Adventures,other,operating,68
+487,c:143777,Makerank,ecommerce,operating,98
+509,c:146031,Mapmyuser,software,operating,82
+515,c:146663,Proof Creative,advertising,operating,92
+518,c:147201,Payconomy,network_hosting,operating,44
+524,c:147852,iLoveTech,ecommerce,operating,90
+532,c:148661,Floktu,web,operating,2
+534,c:148779,Bodhicrew Services Private Limited,other,operating,27
+588,c:152984,HMK INDIA,software,operating,30
+591,c:153145,HealthKonnect,web,operating,38
+604,c:154191,Bluegape Lifestyle,ecommerce,operating,96
+615,c:155386,Ourcast,mobile,operating,57
+620,c:155978,ScriptsDump Software,software,operating,76
+647,c:159041,Santhra Technology Consulting,software,operating,15
+649,c:159510,Booty.com.au,advertising,operating,3
+664,c:161195,Amlib,software,acquired,11
+682,c:162801,Jeeves,hardware,operating,81
+734,c:167564,Promotional Perks,advertising,operating,65
+737,c:167706,Digital Genius,enterprise,acquired,96
+745,c:16934,chida.in,software,operating,96
+749,c:16943,Beyond NG,software,operating,87
+755,c:170223,Royalimages.in,ecommerce,operating,12
+767,c:171092,Advanced Business Intelligence & Analytics Pvt Ltd,other,operating,55
+787,c:1723,Minti,web,operating,62
+815,c:17415,Iteanz technologies India Private Limited,software,operating,13
+845,c:17591,Source IT,mobile,operating,41
+850,c:17611,First Flight,mobile,operating,27
+856,c:176557,EnvoyRelate,software,operating,79
+861,c:176921,Safexpress Private Limited,other,operating,71
+862,c:176982,Accubits,consulting,operating,52
+864,c:177096,Genie8,software,operating,1
+890,c:179972,Chiropedic Mattress Factory Direct,other,operating,15
+893,c:180083,Royce Cross Agencies,hardware,operating,81
+958,c:39482,Astute Software,consulting,operating,96
+983,c:40506,KPIT Cummins,consulting,operating,20
+1030,c:43322,KRAZY DEVIL CREATIONZ,web,operating,49
+1080,c:45548,Narzana Technologies,mobile,operating,87
+1097,c:46506,Protagonist Therapeutics,biotech,operating,52
+1098,c:46534,Ticket4one,enterprise,operating,67
+1124,c:47198,scigroups,enterprise,operating,80
+1165,c:49920,IITM's Rural Technology and Business Incubator,other,operating,3
+1172,c:50521,Agraj Fresh,other,operating,71
+1190,c:51490,CSG Limited,software,operating,32
+1206,c:52091,Coridon,biotech,operating,46
+1207,c:52116,21st Century Infra Tele,public_relations,acquired,79
+1210,c:52497,Artoon Solutions  Pvt. Ltd.,software,operating,31
+1247,c:55315,Infogird Solutions,public_relations,operating,62
+1252,c:55791,Rhytha Web Solutions,software,operating,32
+1255,c:55873,Palette Architect & Interiors Pvt. Ltd,other,operating,63
+1256,c:55918,Immune System Therapeutics,biotech,operating,24
+1315,c:5953,Cobaan,web,operating,9
+1319,c:5967,Vespertine Media,consulting,operating,28
+1347,c:61959,The Ariton Group,consulting,operating,4
+1382,c:64634,Simplywise Technologies,games_video,operating,95
+1390,c:65212,PolicyWala.com,other,operating,92
+1395,c:65627,E Billing Solutions,ecommerce,operating,91
+1491,c:73803,Realholidays.com.au,web,acquired,59
+1492,c:73825,Babyoye,ecommerce,operating,10
+1494,c:73935,KANE,other,operating,18
+1503,c:7460,Digital Ventures,software,operating,100
+1514,c:241202,Deesan Group,ecommerce,operating,53
+1515,c:241245,Flexiroam,mobile,operating,88
+1519,c:242523,Cubito,ecommerce,operating,33
+1520,c:24257,Althea Systems,hardware,operating,81
+1629,c:25058,tiggin,web,operating,63
+1709,c:255903,cubeheap technologies Pvt. Ltd.,software,operating,77
+1714,c:256466,VITAL SPARK Software Solutions,software,operating,100
+1716,c:256492,Bookpad Tech,software,operating,4
+1729,c:257386,Alpha Salmon,ecommerce,operating,10
+1745,c:259150,S B Webtech Private Limited,ecommerce,operating,76
+1775,c:262315,Pioneer Travels,consulting,operating,13
+1798,c:264817,Alacurity Services,biotech,operating,71
+1810,c:266662,Ivent IT Solutions,enterprise,operating,99
+1816,c:267125,Studio Krew,network_hosting,operating,9
+1838,c:268555,Readify,software,operating,73
+1881,c:272125,Media 11 Pvt Ltd,advertising,operating,16
+1895,c:274141,Mitra Biotech,biotech,operating,7
+1920,c:276371,Aston Club,mobile,operating,96
+1941,c:278869,Core Diagnostics,biotech,operating,48
+1943,c:279104,InCights Mobile Solutions,software,operating,40
+1952,c:28026,ideacts innovations,software,operating,9
+1955,c:280362,Ketto,web,operating,56
+1963,c:280722,Newsys Solution,software,operating,30
+1974,c:282065,AUUG,hardware,operating,19
+1991,c:283282,The Boat Bay,advertising,operating,10
+2001,c:284316,BIBA Apparels,other,operating,62
+2016,c:285175,Phone Warrior,mobile,operating,6
+2026,c:286065,OneBreath,consulting,operating,60
+2109,c:34719,Netralia,software,operating,38
+2122,c:35453,Communicate2,advertising,operating,62
+2156,c:76721,VTUConnect,other,operating,85
+2169,c:78002,Intuo Tech,software,operating,35
+2203,c:81333,Excelsior Marketing Solutions Ltd,other,operating,68
+2212,c:81742,Foradian,software,operating,98
+2213,c:8182,kwippy.com,web,operating,17
+2221,c:83016,Web Sketcherz,web,operating,30
+2227,c:83456,Avagam,enterprise,operating,67
+2239,c:84903,tinySurprise,ecommerce,operating,48
+2244,c:85418,ABR Petro Products Ltd.,other,operating,97
+2247,c:85854,Spinifex Pharmaceuticals,biotech,operating,99
+2249,c:86097,Dropouts,software,operating,35
+2264,c:98231,Essenso Labs,software,operating,20

@@ -1,0 +1,28 @@
+header {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #000000;
+}
+
+.nav-wrapper {
+  width: 25%;
+}
+
+.navbar {
+  list-style-type: none;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0;
+  align-items: center;
+}
+
+li > a {
+  text-decoration: none;
+  color: white;
+}

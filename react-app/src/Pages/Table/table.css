@@ -1,0 +1,30 @@
+.table-page-container {
+  height: calc(100vh - 110px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.table-wrapper {
+  width: 72%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.refresh-button {
+  background-color: white;
+  cursor: pointer;
+  border-radius: 3px;
+  border-color: gainsboro;
+  border-width: thin;
+  border-style: solid;
+  align-self: end;
+  margin-bottom: 10px;
+}
+
+.refresh-button:hover {
+  background-color: rgb(231, 231, 231);
+}
