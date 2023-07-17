@@ -1,0 +1,4 @@
+react-app/.env
+react-app/.graphqlconfig.yml
+react-app/src/graphql/
+react-app/node_modules/
