@@ -24,9 +24,10 @@ This README explains how to upload code to an AWS Lambda function, create an AWS
 2. Select `Layers` in the left menu.
 3. Click `Create Layer`.
 4. Enter a name and description for your layer.
-5. Upload the provided ZIP file under `lambdas/layer` directory containing the layer's code.
-6. Choose the `python 3.7` runtime for your layer.
-7. Click `Create`.
+5. Download this [package layer ZIP file](https://aws-blogs-artifacts-public.s3.amazonaws.com/artifacts/BDB-3234/package-layer.zip) 
+6. Click the `Upload` button to upload the ZIP file.
+7. Choose the `python 3.7` runtime for your layer.
+8. Click `Create`.
 
 ## 3. Attach the Layer to a AppSync Request Handler Lambda
 
